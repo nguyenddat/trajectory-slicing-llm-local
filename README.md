@@ -84,8 +84,10 @@ Elephant 231 MB được quản lý bằng Git LFS; các JSONL và checkpoint nh
 thường. Sau khi clone, chạy `git lfs pull` trước khi build image. Docker build
 sẽ từ chối nếu file lớn vẫn chỉ là LFS pointer.
 
-Không cần `.env` hay thông tin xác thực Cloud Run để chạy Ollama local. Các cấu
-hình slicing dùng OpenAI embeddings bị bỏ qua, giống các runner model hiện có.
+Không cần `.env` hay thông tin xác thực Cloud Run để chạy Ollama local. Sáu cấu
+hình `c99_transformer` và `text_tiling_transformer` cần OpenRouter embeddings
+đã bị loại khỏi danh sách chạy của runner local. Checkpoint transformer cũ của
+Qwen vẫn được giữ trong `outputs/`, nhưng runner sẽ không chạy thêm cấu hình đó.
 
 Nếu không dùng Docker, cài Python 3.12+, `uv` và các gói trong
 `requirements.txt`, tải NLTK stopwords, rồi gọi `src/run_local.py` với cùng

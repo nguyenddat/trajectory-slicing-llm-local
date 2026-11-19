@@ -49,6 +49,8 @@ def parse_args() -> argparse.Namespace:
 
 
 def run_configs(model_name: str):
+    # Transformer slicing calls OpenRouter embeddings. Keep its definitions in
+    # run.py for compatibility, but do not schedule those settings locally.
     slicing_configs = [
         (name, cls, {"model_name": model_name} if name == "llm_based" else params)
         for name, cls, params in base_run.SLICING_CONFIGS
