@@ -1,0 +1,1149 @@
+{
+  "config": {
+    "file": "fixed_token_15000__all_at_once.json",
+    "slicing": "fixed_token_15000",
+    "slicing_parameters": {
+      "max_tokens_per_slice": 15000
+    },
+    "attribution": "all_at_once",
+    "model": "deepseek-r1:32b",
+    "context_length": 131072
+  },
+  "samples": {
+    "data/gold/agentrx/magentic_one.jsonl:0": {
+      "source": "data/gold/agentrx/magentic_one.jsonl",
+      "index": 0,
+      "context_length": 131072,
+      "prediction": {
+        "pred_step_index": 2,
+        "latency": 74.92365210000025,
+        "input_tokens": 19872,
+        "output_tokens": 506,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 0,
+        "agent_accuracy": 0
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          42
+        ],
+        [
+          42,
+          80
+        ],
+        [
+          80,
+          112
+        ],
+        [
+          112,
+          129
+        ]
+      ]
+    },
+    "data/gold/agentrx/magentic_one.jsonl:2": {
+      "source": "data/gold/agentrx/magentic_one.jsonl",
+      "index": 2,
+      "context_length": 131072,
+      "prediction": {
+        "pred_step_index": 5,
+        "latency": 15.002846499999578,
+        "input_tokens": 19350,
+        "output_tokens": 381,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 0,
+        "agent_accuracy": 1
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          47
+        ],
+        [
+          47,
+          93
+        ]
+      ]
+    },
+    "data/gold/agentrx/magentic_one.jsonl:3": {
+      "source": "data/gold/agentrx/magentic_one.jsonl",
+      "index": 3,
+      "context_length": 131072,
+      "prediction": {
+        "pred_step_index": 30,
+        "latency": 12.26613019999968,
+        "input_tokens": 11908,
+        "output_tokens": 432,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 0,
+        "agent_accuracy": 1
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          32
+        ]
+      ]
+    },
+    "data/gold/agentrx/magentic_one.jsonl:4": {
+      "source": "data/gold/agentrx/magentic_one.jsonl",
+      "index": 4,
+      "context_length": 131072,
+      "prediction": {
+        "pred_step_index": 17,
+        "latency": 8.906595100001141,
+        "input_tokens": 9813,
+        "output_tokens": 317,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 0,
+        "agent_accuracy": 0
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          33
+        ]
+      ]
+    },
+    "data/gold/agentrx/magentic_one.jsonl:5": {
+      "source": "data/gold/agentrx/magentic_one.jsonl",
+      "index": 5,
+      "context_length": 131072,
+      "prediction": {
+        "pred_step_index": 13,
+        "latency": 11.818621500000518,
+        "input_tokens": 11689,
+        "output_tokens": 440,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 0,
+        "agent_accuracy": 1
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          16
+        ]
+      ]
+    },
+    "data/gold/agentrx/magentic_one.jsonl:6": {
+      "source": "data/gold/agentrx/magentic_one.jsonl",
+      "index": 6,
+      "context_length": 131072,
+      "prediction": {
+        "pred_step_index": 4,
+        "latency": 12.813724600000569,
+        "input_tokens": 17979,
+        "output_tokens": 347,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 0,
+        "agent_accuracy": 0
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          47
+        ],
+        [
+          47,
+          94
+        ],
+        [
+          94,
+          130
+        ]
+      ]
+    },
+    "data/gold/agentrx/magentic_one.jsonl:7": {
+      "source": "data/gold/agentrx/magentic_one.jsonl",
+      "index": 7,
+      "context_length": 131072,
+      "prediction": {
+        "pred_step_index": 2,
+        "latency": 11.875927899998715,
+        "input_tokens": 15901,
+        "output_tokens": 327,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 0,
+        "agent_accuracy": 1
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          54
+        ],
+        [
+          54,
+          90
+        ],
+        [
+          90,
+          107
+        ],
+        [
+          107,
+          108
+        ],
+        [
+          108,
+          123
+        ]
+      ]
+    },
+    "data/gold/agentrx/magentic_one.jsonl:9": {
+      "source": "data/gold/agentrx/magentic_one.jsonl",
+      "index": 9,
+      "context_length": 131072,
+      "prediction": {
+        "pred_step_index": 5,
+        "latency": 7.741922999999588,
+        "input_tokens": 4039,
+        "output_tokens": 269,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 1,
+        "agent_accuracy": 1
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          5
+        ]
+      ]
+    },
+    "data/gold/agentrx/magentic_one.jsonl:10": {
+      "source": "data/gold/agentrx/magentic_one.jsonl",
+      "index": 10,
+      "context_length": 131072,
+      "prediction": {
+        "pred_step_index": 11,
+        "latency": 17.007266399999935,
+        "input_tokens": 13459,
+        "output_tokens": 713,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 0,
+        "agent_accuracy": 0
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          24
+        ],
+        [
+          24,
+          25
+        ],
+        [
+          25,
+          28
+        ],
+        [
+          28,
+          29
+        ],
+        [
+          29,
+          85
+        ],
+        [
+          85,
+          121
+        ]
+      ]
+    },
+    "data/gold/agentrx/magentic_one.jsonl:11": {
+      "source": "data/gold/agentrx/magentic_one.jsonl",
+      "index": 11,
+      "context_length": 131072,
+      "prediction": {
+        "pred_step_index": 13,
+        "latency": 8.924137999998493,
+        "input_tokens": 8398,
+        "output_tokens": 321,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 0,
+        "agent_accuracy": 0
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          20
+        ]
+      ]
+    },
+    "data/gold/agentrx/magentic_one.jsonl:12": {
+      "source": "data/gold/agentrx/magentic_one.jsonl",
+      "index": 12,
+      "context_length": 131072,
+      "prediction": {
+        "pred_step_index": 11,
+        "latency": 8.251127799998358,
+        "input_tokens": 7149,
+        "output_tokens": 344,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 0,
+        "agent_accuracy": 1
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          17
+        ]
+      ]
+    },
+    "data/gold/agentrx/magentic_one.jsonl:13": {
+      "source": "data/gold/agentrx/magentic_one.jsonl",
+      "index": 13,
+      "context_length": 131072,
+      "prediction": {
+        "pred_step_index": 2,
+        "latency": 6.889658000000054,
+        "input_tokens": 2425,
+        "output_tokens": 357,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 1,
+        "agent_accuracy": 1
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          5
+        ]
+      ]
+    },
+    "data/gold/agentrx/magentic_one.jsonl:14": {
+      "source": "data/gold/agentrx/magentic_one.jsonl",
+      "index": 14,
+      "context_length": 131072,
+      "status": "failed",
+      "prediction": null,
+      "metrics": null,
+      "error": {
+        "type": "AttributeError",
+        "message": "'NoneType' object has no attribute 'get'"
+      },
+      "slice_ranges": [
+        [
+          0,
+          20
+        ]
+      ]
+    },
+    "data/gold/agentrx/magentic_one.jsonl:16": {
+      "source": "data/gold/agentrx/magentic_one.jsonl",
+      "index": 16,
+      "context_length": 131072,
+      "prediction": {
+        "pred_step_index": 11,
+        "latency": 18.819673499998316,
+        "input_tokens": 10914,
+        "output_tokens": 793,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 1,
+        "agent_accuracy": 1
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          21
+        ]
+      ]
+    },
+    "data/gold/agentrx/magentic_one.jsonl:17": {
+      "source": "data/gold/agentrx/magentic_one.jsonl",
+      "index": 17,
+      "context_length": 131072,
+      "prediction": {
+        "pred_step_index": 20,
+        "latency": 15.214219699999376,
+        "input_tokens": 12734,
+        "output_tokens": 581,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 0,
+        "agent_accuracy": 0
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          32
+        ]
+      ]
+    },
+    "data/gold/agentrx/magentic_one.jsonl:18": {
+      "source": "data/gold/agentrx/magentic_one.jsonl",
+      "index": 18,
+      "context_length": 131072,
+      "prediction": {
+        "pred_step_index": 43,
+        "latency": 13.827269299999898,
+        "input_tokens": 18268,
+        "output_tokens": 397,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 0,
+        "agent_accuracy": 1
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          50
+        ],
+        [
+          50,
+          86
+        ]
+      ]
+    },
+    "data/gold/agentrx/magentic_one.jsonl:19": {
+      "source": "data/gold/agentrx/magentic_one.jsonl",
+      "index": 19,
+      "context_length": 131072,
+      "prediction": {
+        "pred_step_index": 5,
+        "latency": 7.3908216000018,
+        "input_tokens": 4409,
+        "output_tokens": 296,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 1,
+        "agent_accuracy": 1
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          5
+        ]
+      ]
+    },
+    "data/gold/agentrx/magentic_one.jsonl:20": {
+      "source": "data/gold/agentrx/magentic_one.jsonl",
+      "index": 20,
+      "context_length": 131072,
+      "prediction": {
+        "pred_step_index": 31,
+        "latency": 17.60047130000021,
+        "input_tokens": 13658,
+        "output_tokens": 737,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 1,
+        "agent_accuracy": 1
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          31
+        ]
+      ]
+    },
+    "data/gold/agentrx/magentic_one.jsonl:21": {
+      "source": "data/gold/agentrx/magentic_one.jsonl",
+      "index": 21,
+      "context_length": 131072,
+      "prediction": {
+        "pred_step_index": 21,
+        "latency": 11.914173800003482,
+        "input_tokens": 17768,
+        "output_tokens": 294,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 0,
+        "agent_accuracy": 0
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          50
+        ],
+        [
+          50,
+          51
+        ]
+      ]
+    },
+    "data/gold/agentrx/magentic_one.jsonl:22": {
+      "source": "data/gold/agentrx/magentic_one.jsonl",
+      "index": 22,
+      "context_length": 131072,
+      "prediction": {
+        "pred_step_index": 17,
+        "latency": 10.293960400002106,
+        "input_tokens": 13868,
+        "output_tokens": 288,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 0,
+        "agent_accuracy": 0
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          47
+        ],
+        [
+          47,
+          48
+        ],
+        [
+          48,
+          67
+        ]
+      ]
+    },
+    "data/gold/agentrx/magentic_one.jsonl:23": {
+      "source": "data/gold/agentrx/magentic_one.jsonl",
+      "index": 23,
+      "context_length": 131072,
+      "prediction": {
+        "pred_step_index": 2,
+        "latency": 14.35995339999863,
+        "input_tokens": 19574,
+        "output_tokens": 385,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 0,
+        "agent_accuracy": 1
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          74
+        ],
+        [
+          74,
+          130
+        ]
+      ]
+    },
+    "data/gold/agentrx/magentic_one.jsonl:24": {
+      "source": "data/gold/agentrx/magentic_one.jsonl",
+      "index": 24,
+      "context_length": 131072,
+      "prediction": {
+        "pred_step_index": 15,
+        "latency": 21.20181489999959,
+        "input_tokens": 11060,
+        "output_tokens": 957,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 0,
+        "agent_accuracy": 0
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          17
+        ]
+      ]
+    },
+    "data/gold/agentrx/magentic_one.jsonl:25": {
+      "source": "data/gold/agentrx/magentic_one.jsonl",
+      "index": 25,
+      "context_length": 131072,
+      "prediction": {
+        "pred_step_index": 13,
+        "latency": 9.403648300001805,
+        "input_tokens": 10345,
+        "output_tokens": 336,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 0,
+        "agent_accuracy": 0
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          29
+        ]
+      ]
+    },
+    "data/gold/agentrx/magentic_one.jsonl:27": {
+      "source": "data/gold/agentrx/magentic_one.jsonl",
+      "index": 27,
+      "context_length": 131072,
+      "prediction": {
+        "pred_step_index": 25,
+        "latency": 12.111843799997587,
+        "input_tokens": 10118,
+        "output_tokens": 491,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 0,
+        "agent_accuracy": 0
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          28
+        ]
+      ]
+    },
+    "data/gold/agentrx/magentic_one.jsonl:28": {
+      "source": "data/gold/agentrx/magentic_one.jsonl",
+      "index": 28,
+      "context_length": 131072,
+      "prediction": {
+        "pred_step_index": 9,
+        "latency": 8.713592799998878,
+        "input_tokens": 5078,
+        "output_tokens": 408,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 1,
+        "agent_accuracy": 1
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          9
+        ]
+      ]
+    },
+    "data/gold/agentrx/magentic_one.jsonl:29": {
+      "source": "data/gold/agentrx/magentic_one.jsonl",
+      "index": 29,
+      "context_length": 131072,
+      "prediction": {
+        "pred_step_index": 13,
+        "latency": 10.598531899999216,
+        "input_tokens": 6699,
+        "output_tokens": 508,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 1,
+        "agent_accuracy": 1
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          13
+        ]
+      ]
+    },
+    "data/gold/agentrx/magentic_one.jsonl:30": {
+      "source": "data/gold/agentrx/magentic_one.jsonl",
+      "index": 30,
+      "context_length": 131072,
+      "prediction": {
+        "pred_step_index": 19,
+        "latency": 12.190232799999649,
+        "input_tokens": 18957,
+        "output_tokens": 303,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 0,
+        "agent_accuracy": 0
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          58
+        ],
+        [
+          58,
+          121
+        ],
+        [
+          121,
+          124
+        ]
+      ]
+    },
+    "data/gold/agentrx/magentic_one.jsonl:33": {
+      "source": "data/gold/agentrx/magentic_one.jsonl",
+      "index": 33,
+      "context_length": 131072,
+      "prediction": {
+        "pred_step_index": 8,
+        "latency": 18.066778100001102,
+        "input_tokens": 20139,
+        "output_tokens": 554,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 0,
+        "agent_accuracy": 1
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          46
+        ],
+        [
+          46,
+          92
+        ],
+        [
+          92,
+          113
+        ]
+      ]
+    },
+    "data/gold/agentrx/magentic_one.jsonl:34": {
+      "source": "data/gold/agentrx/magentic_one.jsonl",
+      "index": 34,
+      "context_length": 131072,
+      "prediction": {
+        "pred_step_index": -1,
+        "latency": 11.777916999999434,
+        "input_tokens": 10324,
+        "output_tokens": 433,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 0,
+        "agent_accuracy": 0
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          25
+        ]
+      ]
+    },
+    "data/gold/agentrx/magentic_one.jsonl:35": {
+      "source": "data/gold/agentrx/magentic_one.jsonl",
+      "index": 35,
+      "context_length": 131072,
+      "prediction": {
+        "pred_step_index": 5,
+        "latency": 12.36911390000023,
+        "input_tokens": 18677,
+        "output_tokens": 315,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 0,
+        "agent_accuracy": 0
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          44
+        ]
+      ]
+    },
+    "data/gold/agentrx/magentic_one.jsonl:36": {
+      "source": "data/gold/agentrx/magentic_one.jsonl",
+      "index": 36,
+      "context_length": 131072,
+      "prediction": {
+        "pred_step_index": 2,
+        "latency": 13.966205600001558,
+        "input_tokens": 19302,
+        "output_tokens": 354,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 0,
+        "agent_accuracy": 1
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          58
+        ],
+        [
+          58,
+          59
+        ]
+      ]
+    },
+    "data/gold/agentrx/magentic_one.jsonl:38": {
+      "source": "data/gold/agentrx/magentic_one.jsonl",
+      "index": 38,
+      "context_length": 131072,
+      "prediction": {
+        "pred_step_index": 9,
+        "latency": 13.398334699999396,
+        "input_tokens": 5144,
+        "output_tokens": 654,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 0,
+        "agent_accuracy": 0
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          12
+        ]
+      ]
+    },
+    "data/gold/agentrx/magentic_one.jsonl:39": {
+      "source": "data/gold/agentrx/magentic_one.jsonl",
+      "index": 39,
+      "context_length": 131072,
+      "prediction": {
+        "pred_step_index": 4,
+        "latency": 13.137318700002652,
+        "input_tokens": 17533,
+        "output_tokens": 397,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 0,
+        "agent_accuracy": 0
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          53
+        ]
+      ]
+    },
+    "data/gold/agentrx/magentic_one.jsonl:41": {
+      "source": "data/gold/agentrx/magentic_one.jsonl",
+      "index": 41,
+      "context_length": 131072,
+      "prediction": {
+        "pred_step_index": 17,
+        "latency": 16.02240769999844,
+        "input_tokens": 18503,
+        "output_tokens": 486,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 0,
+        "agent_accuracy": 1
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          46
+        ],
+        [
+          46,
+          100
+        ],
+        [
+          100,
+          129
+        ]
+      ]
+    },
+    "data/gold/agentrx/magentic_one.jsonl:43": {
+      "source": "data/gold/agentrx/magentic_one.jsonl",
+      "index": 43,
+      "context_length": 131072,
+      "prediction": {
+        "pred_step_index": 5,
+        "latency": 12.811277100001462,
+        "input_tokens": 12374,
+        "output_tokens": 453,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 1,
+        "agent_accuracy": 1
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          25
+        ]
+      ]
+    },
+    "data/gold/agentrx/magentic_one.jsonl:44": {
+      "source": "data/gold/agentrx/magentic_one.jsonl",
+      "index": 44,
+      "context_length": 131072,
+      "prediction": {
+        "pred_step_index": 21,
+        "latency": 9.478546400001505,
+        "input_tokens": 8373,
+        "output_tokens": 380,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 1,
+        "agent_accuracy": 1
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          21
+        ]
+      ]
+    },
+    "data/gold/agentrx/magentic_one.jsonl:45": {
+      "source": "data/gold/agentrx/magentic_one.jsonl",
+      "index": 45,
+      "context_length": 131072,
+      "prediction": {
+        "pred_step_index": 19,
+        "latency": 8.408159500002512,
+        "input_tokens": 9997,
+        "output_tokens": 285,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 0,
+        "agent_accuracy": 1
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          28
+        ],
+        [
+          28,
+          51
+        ],
+        [
+          51,
+          52
+        ]
+      ]
+    },
+    "data/gold/agentrx/magentic_one.jsonl:46": {
+      "source": "data/gold/agentrx/magentic_one.jsonl",
+      "index": 46,
+      "context_length": 131072,
+      "prediction": {
+        "pred_step_index": 13,
+        "latency": 20.521281999997882,
+        "input_tokens": 9650,
+        "output_tokens": 1000,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 0,
+        "agent_accuracy": 0
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          21
+        ]
+      ]
+    },
+    "data/gold/agentrx/magentic_one.jsonl:47": {
+      "source": "data/gold/agentrx/magentic_one.jsonl",
+      "index": 47,
+      "context_length": 131072,
+      "prediction": {
+        "pred_step_index": 13,
+        "latency": 11.03623250000237,
+        "input_tokens": 9007,
+        "output_tokens": 457,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 0,
+        "agent_accuracy": 0
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          24
+        ]
+      ]
+    },
+    "data/gold/agentrx/magentic_one.jsonl:48": {
+      "source": "data/gold/agentrx/magentic_one.jsonl",
+      "index": 48,
+      "context_length": 131072,
+      "prediction": {
+        "pred_step_index": 11,
+        "latency": 14.404839599999832,
+        "input_tokens": 18195,
+        "output_tokens": 435,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 0,
+        "agent_accuracy": 1
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          29
+        ],
+        [
+          29,
+          75
+        ],
+        [
+          75,
+          91
+        ]
+      ]
+    },
+    "data/gold/agentrx/magentic_one.jsonl:50": {
+      "source": "data/gold/agentrx/magentic_one.jsonl",
+      "index": 50,
+      "context_length": 131072,
+      "prediction": {
+        "pred_step_index": 25,
+        "latency": 32.992436100001214,
+        "input_tokens": 17976,
+        "output_tokens": 1403,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 0,
+        "agent_accuracy": 0
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          37
+        ]
+      ]
+    },
+    "data/gold/agentrx/magentic_one.jsonl:53": {
+      "source": "data/gold/agentrx/magentic_one.jsonl",
+      "index": 53,
+      "context_length": 131072,
+      "prediction": {
+        "pred_step_index": 5,
+        "latency": 8.08887269999832,
+        "input_tokens": 3431,
+        "output_tokens": 370,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 0,
+        "agent_accuracy": 0
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          8
+        ]
+      ]
+    },
+    "data/gold/agentrx/magentic_one.jsonl:54": {
+      "source": "data/gold/agentrx/magentic_one.jsonl",
+      "index": 54,
+      "context_length": 131072,
+      "prediction": {
+        "pred_step_index": 23,
+        "latency": 13.351463999999396,
+        "input_tokens": 18884,
+        "output_tokens": 381,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 0,
+        "agent_accuracy": 0
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          51
+        ],
+        [
+          51,
+          83
+        ]
+      ]
+    },
+    "data/gold/agentrx/magentic_one.jsonl:57": {
+      "source": "data/gold/agentrx/magentic_one.jsonl",
+      "index": 57,
+      "context_length": 131072,
+      "prediction": {
+        "pred_step_index": 5,
+        "latency": 10.290509099999326,
+        "input_tokens": 7620,
+        "output_tokens": 415,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 0,
+        "agent_accuracy": 1
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          17
+        ]
+      ]
+    }
+  }
+}

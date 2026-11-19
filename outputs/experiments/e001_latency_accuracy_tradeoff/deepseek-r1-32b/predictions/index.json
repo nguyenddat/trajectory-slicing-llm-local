@@ -1,0 +1,117 @@
+{
+  "version": 1,
+  "configs": {
+    "no_slicing__all_at_once": {
+      "file": "no_slicing__all_at_once.json",
+      "slicing": "no_slicing",
+      "slicing_parameters": {},
+      "attribution": "all_at_once",
+      "model": "deepseek-r1:32b",
+      "context_length": 131072
+    },
+    "fixed_step_5_overlap2__all_at_once": {
+      "file": "fixed_step_5_overlap2__all_at_once.json",
+      "slicing": "fixed_step_5_overlap2",
+      "slicing_parameters": {
+        "max_steps_per_slice": 5,
+        "overlapping": 2
+      },
+      "attribution": "all_at_once",
+      "model": "deepseek-r1:32b",
+      "context_length": 131072
+    },
+    "fixed_step_9_overlap4__all_at_once": {
+      "file": "fixed_step_9_overlap4__all_at_once.json",
+      "slicing": "fixed_step_9_overlap4",
+      "slicing_parameters": {
+        "max_steps_per_slice": 9,
+        "overlapping": 4
+      },
+      "attribution": "all_at_once",
+      "model": "deepseek-r1:32b",
+      "context_length": 131072
+    },
+    "fixed_step_9__all_at_once": {
+      "file": "fixed_step_9__all_at_once.json",
+      "slicing": "fixed_step_9",
+      "slicing_parameters": {
+        "max_steps_per_slice": 9
+      },
+      "attribution": "all_at_once",
+      "model": "deepseek-r1:32b",
+      "context_length": 131072
+    },
+    "fixed_token_15000_overlap7500__all_at_once": {
+      "file": "fixed_token_15000_overlap7500__all_at_once.json",
+      "slicing": "fixed_token_15000_overlap7500",
+      "slicing_parameters": {
+        "max_tokens_per_slice": 15000,
+        "overlapping": 7500
+      },
+      "attribution": "all_at_once",
+      "model": "deepseek-r1:32b",
+      "context_length": 131072
+    },
+    "fixed_token_15000__all_at_once": {
+      "file": "fixed_token_15000__all_at_once.json",
+      "slicing": "fixed_token_15000",
+      "slicing_parameters": {
+        "max_tokens_per_slice": 15000
+      },
+      "attribution": "all_at_once",
+      "model": "deepseek-r1:32b",
+      "context_length": 131072
+    },
+    "fixed_step_5__all_at_once": {
+      "file": "fixed_step_5__all_at_once.json",
+      "slicing": "fixed_step_5",
+      "slicing_parameters": {
+        "max_steps_per_slice": 5
+      },
+      "attribution": "all_at_once",
+      "model": "deepseek-r1:32b",
+      "context_length": 131072
+    },
+    "fixed_step_7__all_at_once": {
+      "file": "fixed_step_7__all_at_once.json",
+      "slicing": "fixed_step_7",
+      "slicing_parameters": {
+        "max_steps_per_slice": 7
+      },
+      "attribution": "all_at_once",
+      "model": "deepseek-r1:32b",
+      "context_length": 131072
+    },
+    "fixed_step_11__all_at_once": {
+      "file": "fixed_step_11__all_at_once.json",
+      "slicing": "fixed_step_11",
+      "slicing_parameters": {
+        "max_steps_per_slice": 11
+      },
+      "attribution": "all_at_once",
+      "model": "deepseek-r1:32b",
+      "context_length": 131072
+    },
+    "fixed_step_13__all_at_once": {
+      "file": "fixed_step_13__all_at_once.json",
+      "slicing": "fixed_step_13",
+      "slicing_parameters": {
+        "max_steps_per_slice": 13
+      },
+      "attribution": "all_at_once",
+      "model": "deepseek-r1:32b",
+      "context_length": 131072
+    },
+    "fixed_step_7_overlap3__all_at_once": {
+      "file": "fixed_step_7_overlap3__all_at_once.json",
+      "slicing": "fixed_step_7_overlap3",
+      "slicing_parameters": {
+        "max_steps_per_slice": 7,
+        "overlapping": 3
+      },
+      "attribution": "all_at_once",
+      "model": "deepseek-r1:32b",
+      "context_length": 131072
+    }
+  }
+}

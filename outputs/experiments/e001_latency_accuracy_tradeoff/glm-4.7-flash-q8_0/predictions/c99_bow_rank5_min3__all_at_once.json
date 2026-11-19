@@ -1,0 +1,4274 @@
+{
+  "config": {
+    "file": "c99_bow_rank5_min3__all_at_once.json",
+    "slicing": "c99_bow_rank5_min3",
+    "slicing_parameters": {
+      "tokenizer": "bow",
+      "rank_window": 5,
+      "min_slice_steps": 3
+    },
+    "attribution": "all_at_once",
+    "model": "glm-4.7-flash:q8_0",
+    "context_length": 202752
+  },
+  "samples": {
+    "data/gold/agentrx/magentic_one.jsonl:0": {
+      "source": "data/gold/agentrx/magentic_one.jsonl",
+      "index": 0,
+      "context_length": 202752,
+      "prediction": {
+        "pred_step_index": -1,
+        "latency": 14.418824500000028,
+        "input_tokens": 58918,
+        "output_tokens": 48,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 0,
+        "agent_accuracy": 0
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          28
+        ],
+        [
+          28,
+          122
+        ],
+        [
+          122,
+          129
+        ]
+      ]
+    },
+    "data/gold/agentrx/magentic_one.jsonl:2": {
+      "source": "data/gold/agentrx/magentic_one.jsonl",
+      "index": 2,
+      "context_length": 202752,
+      "prediction": {
+        "pred_step_index": 14,
+        "latency": 4.676385700000083,
+        "input_tokens": 28413,
+        "output_tokens": 29,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 0,
+        "agent_accuracy": 0
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          13
+        ],
+        [
+          13,
+          77
+        ],
+        [
+          77,
+          93
+        ]
+      ]
+    },
+    "data/gold/agentrx/magentic_one.jsonl:3": {
+      "source": "data/gold/agentrx/magentic_one.jsonl",
+      "index": 3,
+      "context_length": 202752,
+      "prediction": {
+        "pred_step_index": 7,
+        "latency": 1.851514999999381,
+        "input_tokens": 11596,
+        "output_tokens": 32,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 0,
+        "agent_accuracy": 1
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          5
+        ],
+        [
+          5,
+          32
+        ]
+      ]
+    },
+    "data/gold/agentrx/magentic_one.jsonl:4": {
+      "source": "data/gold/agentrx/magentic_one.jsonl",
+      "index": 4,
+      "context_length": 202752,
+      "prediction": {
+        "pred_step_index": 33,
+        "latency": 1.4767345000000205,
+        "input_tokens": 9866,
+        "output_tokens": 26,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 0,
+        "agent_accuracy": 0
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          27
+        ],
+        [
+          27,
+          33
+        ]
+      ]
+    },
+    "data/gold/agentrx/magentic_one.jsonl:5": {
+      "source": "data/gold/agentrx/magentic_one.jsonl",
+      "index": 5,
+      "context_length": 202752,
+      "prediction": {
+        "pred_step_index": 13,
+        "latency": 1.5898487000004025,
+        "input_tokens": 11491,
+        "output_tokens": 16,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 0,
+        "agent_accuracy": 1
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          16
+        ]
+      ]
+    },
+    "data/gold/agentrx/magentic_one.jsonl:6": {
+      "source": "data/gold/agentrx/magentic_one.jsonl",
+      "index": 6,
+      "context_length": 202752,
+      "prediction": {
+        "pred_step_index": -1,
+        "latency": 11.583485799999835,
+        "input_tokens": 47928,
+        "output_tokens": 45,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 0,
+        "agent_accuracy": 0
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          17
+        ],
+        [
+          17,
+          127
+        ],
+        [
+          127,
+          130
+        ]
+      ]
+    },
+    "data/gold/agentrx/magentic_one.jsonl:7": {
+      "source": "data/gold/agentrx/magentic_one.jsonl",
+      "index": 7,
+      "context_length": 202752,
+      "prediction": {
+        "pred_step_index": 120,
+        "latency": 20.608408800000234,
+        "input_tokens": 68728,
+        "output_tokens": 45,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 0,
+        "agent_accuracy": 0
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          32
+        ],
+        [
+          32,
+          114
+        ],
+        [
+          114,
+          123
+        ]
+      ]
+    },
+    "data/gold/agentrx/magentic_one.jsonl:9": {
+      "source": "data/gold/agentrx/magentic_one.jsonl",
+      "index": 9,
+      "context_length": 202752,
+      "prediction": {
+        "pred_step_index": 5,
+        "latency": 0.5485619999999471,
+        "input_tokens": 3855,
+        "output_tokens": 16,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 1,
+        "agent_accuracy": 1
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          5
+        ]
+      ]
+    },
+    "data/gold/agentrx/magentic_one.jsonl:10": {
+      "source": "data/gold/agentrx/magentic_one.jsonl",
+      "index": 10,
+      "context_length": 202752,
+      "prediction": {
+        "pred_step_index": 18,
+        "latency": 27.75230220000003,
+        "input_tokens": 81000,
+        "output_tokens": 29,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 0,
+        "agent_accuracy": 0
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          17
+        ],
+        [
+          17,
+          116
+        ],
+        [
+          116,
+          121
+        ]
+      ]
+    },
+    "data/gold/agentrx/magentic_one.jsonl:11": {
+      "source": "data/gold/agentrx/magentic_one.jsonl",
+      "index": 11,
+      "context_length": 202752,
+      "prediction": {
+        "pred_step_index": 17,
+        "latency": 2.0741929000005257,
+        "input_tokens": 7921,
+        "output_tokens": 29,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 1,
+        "agent_accuracy": 1
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          15
+        ],
+        [
+          15,
+          20
+        ]
+      ]
+    },
+    "data/gold/agentrx/magentic_one.jsonl:12": {
+      "source": "data/gold/agentrx/magentic_one.jsonl",
+      "index": 12,
+      "context_length": 202752,
+      "prediction": {
+        "pred_step_index": -1,
+        "latency": 1.162331500000164,
+        "input_tokens": 7337,
+        "output_tokens": 26,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 0,
+        "agent_accuracy": 0
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          11
+        ],
+        [
+          11,
+          17
+        ]
+      ]
+    },
+    "data/gold/agentrx/magentic_one.jsonl:13": {
+      "source": "data/gold/agentrx/magentic_one.jsonl",
+      "index": 13,
+      "context_length": 202752,
+      "prediction": {
+        "pred_step_index": -1,
+        "latency": 0.4337937000000238,
+        "input_tokens": 2416,
+        "output_tokens": 16,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 0,
+        "agent_accuracy": 0
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          5
+        ]
+      ]
+    },
+    "data/gold/agentrx/magentic_one.jsonl:14": {
+      "source": "data/gold/agentrx/magentic_one.jsonl",
+      "index": 14,
+      "context_length": 202752,
+      "prediction": {
+        "pred_step_index": 15,
+        "latency": 0.8701930999995966,
+        "input_tokens": 6690,
+        "output_tokens": 13,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 0,
+        "agent_accuracy": 1
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          15
+        ],
+        [
+          15,
+          20
+        ]
+      ]
+    },
+    "data/gold/agentrx/magentic_one.jsonl:16": {
+      "source": "data/gold/agentrx/magentic_one.jsonl",
+      "index": 16,
+      "context_length": 202752,
+      "prediction": {
+        "pred_step_index": -1,
+        "latency": 1.535077600000477,
+        "input_tokens": 11000,
+        "output_tokens": 32,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 0,
+        "agent_accuracy": 0
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          10
+        ],
+        [
+          10,
+          21
+        ]
+      ]
+    },
+    "data/gold/agentrx/magentic_one.jsonl:17": {
+      "source": "data/gold/agentrx/magentic_one.jsonl",
+      "index": 17,
+      "context_length": 202752,
+      "prediction": {
+        "pred_step_index": 2,
+        "latency": 1.329467300000033,
+        "input_tokens": 9850,
+        "output_tokens": 13,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 0,
+        "agent_accuracy": 1
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          26
+        ],
+        [
+          26,
+          32
+        ]
+      ]
+    },
+    "data/gold/agentrx/magentic_one.jsonl:18": {
+      "source": "data/gold/agentrx/magentic_one.jsonl",
+      "index": 18,
+      "context_length": 202752,
+      "prediction": {
+        "pred_step_index": 86,
+        "latency": 5.082301300000381,
+        "input_tokens": 30553,
+        "output_tokens": 42,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 0,
+        "agent_accuracy": 1
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          28
+        ],
+        [
+          28,
+          80
+        ],
+        [
+          80,
+          86
+        ]
+      ]
+    },
+    "data/gold/agentrx/magentic_one.jsonl:19": {
+      "source": "data/gold/agentrx/magentic_one.jsonl",
+      "index": 19,
+      "context_length": 202752,
+      "prediction": {
+        "pred_step_index": 5,
+        "latency": 0.6028192999997373,
+        "input_tokens": 4292,
+        "output_tokens": 13,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 1,
+        "agent_accuracy": 1
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          5
+        ]
+      ]
+    },
+    "data/gold/agentrx/magentic_one.jsonl:20": {
+      "source": "data/gold/agentrx/magentic_one.jsonl",
+      "index": 20,
+      "context_length": 202752,
+      "prediction": {
+        "pred_step_index": 24,
+        "latency": 2.0335103000002164,
+        "input_tokens": 13573,
+        "output_tokens": 29,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 0,
+        "agent_accuracy": 1
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          22
+        ],
+        [
+          22,
+          31
+        ]
+      ]
+    },
+    "data/gold/agentrx/magentic_one.jsonl:21": {
+      "source": "data/gold/agentrx/magentic_one.jsonl",
+      "index": 21,
+      "context_length": 202752,
+      "prediction": {
+        "pred_step_index": 51,
+        "latency": 3.0153322000001026,
+        "input_tokens": 19201,
+        "output_tokens": 26,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 0,
+        "agent_accuracy": 1
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          46
+        ],
+        [
+          46,
+          51
+        ]
+      ]
+    },
+    "data/gold/agentrx/magentic_one.jsonl:22": {
+      "source": "data/gold/agentrx/magentic_one.jsonl",
+      "index": 22,
+      "context_length": 202752,
+      "prediction": {
+        "pred_step_index": 67,
+        "latency": 9.257374100000106,
+        "input_tokens": 39408,
+        "output_tokens": 29,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 0,
+        "agent_accuracy": 0
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          58
+        ],
+        [
+          58,
+          67
+        ]
+      ]
+    },
+    "data/gold/agentrx/magentic_one.jsonl:23": {
+      "source": "data/gold/agentrx/magentic_one.jsonl",
+      "index": 23,
+      "context_length": 202752,
+      "prediction": {
+        "pred_step_index": -1,
+        "latency": 6.938874900000428,
+        "input_tokens": 35411,
+        "output_tokens": 29,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 0,
+        "agent_accuracy": 0
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          113
+        ],
+        [
+          113,
+          130
+        ]
+      ]
+    },
+    "data/gold/agentrx/magentic_one.jsonl:24": {
+      "source": "data/gold/agentrx/magentic_one.jsonl",
+      "index": 24,
+      "context_length": 202752,
+      "prediction": {
+        "pred_step_index": 17,
+        "latency": 1.5941324000004897,
+        "input_tokens": 10915,
+        "output_tokens": 29,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 1,
+        "agent_accuracy": 1
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          11
+        ],
+        [
+          11,
+          17
+        ]
+      ]
+    },
+    "data/gold/agentrx/magentic_one.jsonl:25": {
+      "source": "data/gold/agentrx/magentic_one.jsonl",
+      "index": 25,
+      "context_length": 202752,
+      "prediction": {
+        "pred_step_index": 29,
+        "latency": 1.48872080000001,
+        "input_tokens": 10467,
+        "output_tokens": 29,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 0,
+        "agent_accuracy": 0
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          23
+        ],
+        [
+          23,
+          29
+        ]
+      ]
+    },
+    "data/gold/agentrx/magentic_one.jsonl:27": {
+      "source": "data/gold/agentrx/magentic_one.jsonl",
+      "index": 27,
+      "context_length": 202752,
+      "prediction": {
+        "pred_step_index": 25,
+        "latency": 1.5766081000001577,
+        "input_tokens": 10093,
+        "output_tokens": 32,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 0,
+        "agent_accuracy": 0
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          23
+        ],
+        [
+          23,
+          28
+        ]
+      ]
+    },
+    "data/gold/agentrx/magentic_one.jsonl:28": {
+      "source": "data/gold/agentrx/magentic_one.jsonl",
+      "index": 28,
+      "context_length": 202752,
+      "prediction": {
+        "pred_step_index": -1,
+        "latency": 0.6433902999997372,
+        "input_tokens": 4889,
+        "output_tokens": 13,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 0,
+        "agent_accuracy": 0
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          9
+        ]
+      ]
+    },
+    "data/gold/agentrx/magentic_one.jsonl:29": {
+      "source": "data/gold/agentrx/magentic_one.jsonl",
+      "index": 29,
+      "context_length": 202752,
+      "prediction": {
+        "pred_step_index": -1,
+        "latency": 0.9006445999998505,
+        "input_tokens": 6508,
+        "output_tokens": 16,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 0,
+        "agent_accuracy": 0
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          13
+        ]
+      ]
+    },
+    "data/gold/agentrx/magentic_one.jsonl:30": {
+      "source": "data/gold/agentrx/magentic_one.jsonl",
+      "index": 30,
+      "context_length": 202752,
+      "prediction": {
+        "pred_step_index": 121,
+        "latency": 8.038071500000115,
+        "input_tokens": 38393,
+        "output_tokens": 48,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 0,
+        "agent_accuracy": 0
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          9
+        ],
+        [
+          9,
+          112
+        ],
+        [
+          112,
+          124
+        ]
+      ]
+    },
+    "data/gold/agentrx/magentic_one.jsonl:33": {
+      "source": "data/gold/agentrx/magentic_one.jsonl",
+      "index": 33,
+      "context_length": 202752,
+      "prediction": {
+        "pred_step_index": 2,
+        "latency": 4.1279013999997005,
+        "input_tokens": 8332,
+        "output_tokens": 16,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 0,
+        "agent_accuracy": 1
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          18
+        ],
+        [
+          18,
+          105
+        ],
+        [
+          105,
+          113
+        ]
+      ]
+    },
+    "data/gold/agentrx/magentic_one.jsonl:34": {
+      "source": "data/gold/agentrx/magentic_one.jsonl",
+      "index": 34,
+      "context_length": 202752,
+      "prediction": {
+        "pred_step_index": 6,
+        "latency": 1.5153528999999253,
+        "input_tokens": 10386,
+        "output_tokens": 26,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 0,
+        "agent_accuracy": 0
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          5
+        ],
+        [
+          5,
+          25
+        ]
+      ]
+    },
+    "data/gold/agentrx/magentic_one.jsonl:35": {
+      "source": "data/gold/agentrx/magentic_one.jsonl",
+      "index": 35,
+      "context_length": 202752,
+      "prediction": {
+        "pred_step_index": 41,
+        "latency": 2.588315500000135,
+        "input_tokens": 18712,
+        "output_tokens": 45,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 0,
+        "agent_accuracy": 1
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          9
+        ],
+        [
+          9,
+          39
+        ],
+        [
+          39,
+          44
+        ]
+      ]
+    },
+    "data/gold/agentrx/magentic_one.jsonl:36": {
+      "source": "data/gold/agentrx/magentic_one.jsonl",
+      "index": 36,
+      "context_length": 202752,
+      "prediction": {
+        "pred_step_index": 53,
+        "latency": 3.1995673999995233,
+        "input_tokens": 20014,
+        "output_tokens": 29,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 0,
+        "agent_accuracy": 0
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          51
+        ],
+        [
+          51,
+          59
+        ]
+      ]
+    },
+    "data/gold/agentrx/magentic_one.jsonl:38": {
+      "source": "data/gold/agentrx/magentic_one.jsonl",
+      "index": 38,
+      "context_length": 202752,
+      "prediction": {
+        "pred_step_index": -1,
+        "latency": 0.6956419000002825,
+        "input_tokens": 4921,
+        "output_tokens": 16,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 0,
+        "agent_accuracy": 0
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          12
+        ]
+      ]
+    },
+    "data/gold/agentrx/magentic_one.jsonl:39": {
+      "source": "data/gold/agentrx/magentic_one.jsonl",
+      "index": 39,
+      "context_length": 202752,
+      "prediction": {
+        "pred_step_index": 2,
+        "latency": 2.898424700000305,
+        "input_tokens": 16343,
+        "output_tokens": 80,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 0,
+        "agent_accuracy": 0
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          50
+        ],
+        [
+          50,
+          53
+        ]
+      ]
+    },
+    "data/gold/agentrx/magentic_one.jsonl:41": {
+      "source": "data/gold/agentrx/magentic_one.jsonl",
+      "index": 41,
+      "context_length": 202752,
+      "prediction": {
+        "pred_step_index": 83,
+        "latency": 7.934020600000167,
+        "input_tokens": 43618,
+        "output_tokens": 58,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 0,
+        "agent_accuracy": 0
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          9
+        ],
+        [
+          9,
+          76
+        ],
+        [
+          76,
+          82
+        ],
+        [
+          82,
+          115
+        ],
+        [
+          115,
+          129
+        ]
+      ]
+    },
+    "data/gold/agentrx/magentic_one.jsonl:43": {
+      "source": "data/gold/agentrx/magentic_one.jsonl",
+      "index": 43,
+      "context_length": 202752,
+      "prediction": {
+        "pred_step_index": 23,
+        "latency": 1.9291085000004387,
+        "input_tokens": 12346,
+        "output_tokens": 26,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 0,
+        "agent_accuracy": 0
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          19
+        ],
+        [
+          19,
+          25
+        ]
+      ]
+    },
+    "data/gold/agentrx/magentic_one.jsonl:44": {
+      "source": "data/gold/agentrx/magentic_one.jsonl",
+      "index": 44,
+      "context_length": 202752,
+      "prediction": {
+        "pred_step_index": 6,
+        "latency": 1.212490699999762,
+        "input_tokens": 8728,
+        "output_tokens": 29,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 0,
+        "agent_accuracy": 1
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          5
+        ],
+        [
+          5,
+          21
+        ]
+      ]
+    },
+    "data/gold/agentrx/magentic_one.jsonl:45": {
+      "source": "data/gold/agentrx/magentic_one.jsonl",
+      "index": 45,
+      "context_length": 202752,
+      "prediction": {
+        "pred_step_index": 4,
+        "latency": 5.661721599999964,
+        "input_tokens": 28488,
+        "output_tokens": 16,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 1,
+        "agent_accuracy": 1
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          52
+        ]
+      ]
+    },
+    "data/gold/agentrx/magentic_one.jsonl:46": {
+      "source": "data/gold/agentrx/magentic_one.jsonl",
+      "index": 46,
+      "context_length": 202752,
+      "prediction": {
+        "pred_step_index": 9,
+        "latency": 1.6105263000004015,
+        "input_tokens": 9398,
+        "output_tokens": 26,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 0,
+        "agent_accuracy": 0
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          5
+        ],
+        [
+          5,
+          21
+        ]
+      ]
+    },
+    "data/gold/agentrx/magentic_one.jsonl:47": {
+      "source": "data/gold/agentrx/magentic_one.jsonl",
+      "index": 47,
+      "context_length": 202752,
+      "prediction": {
+        "pred_step_index": 2,
+        "latency": 0.9319537999999739,
+        "input_tokens": 6789,
+        "output_tokens": 13,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 0,
+        "agent_accuracy": 1
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          18
+        ],
+        [
+          18,
+          24
+        ]
+      ]
+    },
+    "data/gold/agentrx/magentic_one.jsonl:48": {
+      "source": "data/gold/agentrx/magentic_one.jsonl",
+      "index": 48,
+      "context_length": 202752,
+      "prediction": {
+        "pred_step_index": 89,
+        "latency": 10.489061200000378,
+        "input_tokens": 41663,
+        "output_tokens": 29,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 0,
+        "agent_accuracy": 1
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          86
+        ],
+        [
+          86,
+          91
+        ]
+      ]
+    },
+    "data/gold/agentrx/magentic_one.jsonl:50": {
+      "source": "data/gold/agentrx/magentic_one.jsonl",
+      "index": 50,
+      "context_length": 202752,
+      "prediction": {
+        "pred_step_index": 9,
+        "latency": 1.9741386999999122,
+        "input_tokens": 14001,
+        "output_tokens": 32,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 0,
+        "agent_accuracy": 0
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          5
+        ],
+        [
+          5,
+          31
+        ],
+        [
+          31,
+          37
+        ]
+      ]
+    },
+    "data/gold/agentrx/magentic_one.jsonl:53": {
+      "source": "data/gold/agentrx/magentic_one.jsonl",
+      "index": 53,
+      "context_length": 202752,
+      "prediction": {
+        "pred_step_index": -1,
+        "latency": 0.6321281000000454,
+        "input_tokens": 3310,
+        "output_tokens": 16,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 0,
+        "agent_accuracy": 0
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          8
+        ]
+      ]
+    },
+    "data/gold/agentrx/magentic_one.jsonl:54": {
+      "source": "data/gold/agentrx/magentic_one.jsonl",
+      "index": 54,
+      "context_length": 202752,
+      "prediction": {
+        "pred_step_index": 6,
+        "latency": 4.961191699999745,
+        "input_tokens": 27583,
+        "output_tokens": 32,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 0,
+        "agent_accuracy": 0
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          5
+        ],
+        [
+          5,
+          77
+        ],
+        [
+          77,
+          83
+        ]
+      ]
+    },
+    "data/gold/agentrx/magentic_one.jsonl:57": {
+      "source": "data/gold/agentrx/magentic_one.jsonl",
+      "index": 57,
+      "context_length": 202752,
+      "prediction": {
+        "pred_step_index": -1,
+        "latency": 1.4140808999995897,
+        "input_tokens": 7712,
+        "output_tokens": 26,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 0,
+        "agent_accuracy": 0
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          11
+        ],
+        [
+          11,
+          17
+        ]
+      ]
+    },
+    "data/gold/agentrx/tau_retail.jsonl:0": {
+      "source": "data/gold/agentrx/tau_retail.jsonl",
+      "index": 0,
+      "context_length": 202752,
+      "prediction": {
+        "pred_step_index": 7,
+        "latency": 1.2446827000003395,
+        "input_tokens": 9324,
+        "output_tokens": 16,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 1,
+        "agent_accuracy": 1
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          32
+        ]
+      ]
+    },
+    "data/gold/agentrx/tau_retail.jsonl:1": {
+      "source": "data/gold/agentrx/tau_retail.jsonl",
+      "index": 1,
+      "context_length": 202752,
+      "prediction": {
+        "pred_step_index": 19,
+        "latency": 1.2936574000000292,
+        "input_tokens": 9398,
+        "output_tokens": 13,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 0,
+        "agent_accuracy": 1
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          34
+        ]
+      ]
+    },
+    "data/gold/agentrx/tau_retail.jsonl:2": {
+      "source": "data/gold/agentrx/tau_retail.jsonl",
+      "index": 2,
+      "context_length": 202752,
+      "prediction": {
+        "pred_step_index": 15,
+        "latency": 1.5931306000002223,
+        "input_tokens": 10615,
+        "output_tokens": 26,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 1,
+        "agent_accuracy": 1
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          6
+        ],
+        [
+          6,
+          37
+        ],
+        [
+          37,
+          48
+        ]
+      ]
+    },
+    "data/gold/agentrx/tau_retail.jsonl:3": {
+      "source": "data/gold/agentrx/tau_retail.jsonl",
+      "index": 3,
+      "context_length": 202752,
+      "prediction": {
+        "pred_step_index": 19,
+        "latency": 0.8266991000000417,
+        "input_tokens": 5802,
+        "output_tokens": 16,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 1,
+        "agent_accuracy": 1
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          26
+        ]
+      ]
+    },
+    "data/gold/agentrx/tau_retail.jsonl:4": {
+      "source": "data/gold/agentrx/tau_retail.jsonl",
+      "index": 4,
+      "context_length": 202752,
+      "prediction": {
+        "pred_step_index": 49,
+        "latency": 3.704623099999935,
+        "input_tokens": 21602,
+        "output_tokens": 13,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 0,
+        "agent_accuracy": 1
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          62
+        ]
+      ]
+    },
+    "data/gold/agentrx/tau_retail.jsonl:5": {
+      "source": "data/gold/agentrx/tau_retail.jsonl",
+      "index": 5,
+      "context_length": 202752,
+      "prediction": {
+        "pred_step_index": 41,
+        "latency": 1.77735070000017,
+        "input_tokens": 11411,
+        "output_tokens": 16,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 0,
+        "agent_accuracy": 0
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          48
+        ]
+      ]
+    },
+    "data/gold/agentrx/tau_retail.jsonl:6": {
+      "source": "data/gold/agentrx/tau_retail.jsonl",
+      "index": 6,
+      "context_length": 202752,
+      "prediction": {
+        "pred_step_index": 23,
+        "latency": 1.5942322999999305,
+        "input_tokens": 10435,
+        "output_tokens": 16,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 0,
+        "agent_accuracy": 1
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          42
+        ]
+      ]
+    },
+    "data/gold/agentrx/tau_retail.jsonl:7": {
+      "source": "data/gold/agentrx/tau_retail.jsonl",
+      "index": 7,
+      "context_length": 202752,
+      "prediction": {
+        "pred_step_index": -1,
+        "latency": 1.2156090000003132,
+        "input_tokens": 8624,
+        "output_tokens": 13,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 0,
+        "agent_accuracy": 0
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          42
+        ]
+      ]
+    },
+    "data/gold/agentrx/tau_retail.jsonl:8": {
+      "source": "data/gold/agentrx/tau_retail.jsonl",
+      "index": 8,
+      "context_length": 202752,
+      "prediction": {
+        "pred_step_index": 11,
+        "latency": 8.49445199999991,
+        "input_tokens": 8416,
+        "output_tokens": 16,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 1,
+        "agent_accuracy": 1
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          42
+        ]
+      ]
+    },
+    "data/gold/agentrx/tau_retail.jsonl:9": {
+      "source": "data/gold/agentrx/tau_retail.jsonl",
+      "index": 9,
+      "context_length": 202752,
+      "prediction": {
+        "pred_step_index": 17,
+        "latency": 1.025930199999948,
+        "input_tokens": 7509,
+        "output_tokens": 13,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 1,
+        "agent_accuracy": 1
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          30
+        ]
+      ]
+    },
+    "data/gold/agentrx/tau_retail.jsonl:10": {
+      "source": "data/gold/agentrx/tau_retail.jsonl",
+      "index": 10,
+      "context_length": 202752,
+      "prediction": {
+        "pred_step_index": 21,
+        "latency": 1.7171698000001925,
+        "input_tokens": 12199,
+        "output_tokens": 13,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 0,
+        "agent_accuracy": 1
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          46
+        ]
+      ]
+    },
+    "data/gold/agentrx/tau_retail.jsonl:11": {
+      "source": "data/gold/agentrx/tau_retail.jsonl",
+      "index": 11,
+      "context_length": 202752,
+      "prediction": {
+        "pred_step_index": -1,
+        "latency": 0.9399954999998954,
+        "input_tokens": 6205,
+        "output_tokens": 16,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 0,
+        "agent_accuracy": 0
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          26
+        ]
+      ]
+    },
+    "data/gold/agentrx/tau_retail.jsonl:12": {
+      "source": "data/gold/agentrx/tau_retail.jsonl",
+      "index": 12,
+      "context_length": 202752,
+      "prediction": {
+        "pred_step_index": 17,
+        "latency": 1.0335456000002523,
+        "input_tokens": 7777,
+        "output_tokens": 13,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 1,
+        "agent_accuracy": 1
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          24
+        ]
+      ]
+    },
+    "data/gold/agentrx/tau_retail.jsonl:13": {
+      "source": "data/gold/agentrx/tau_retail.jsonl",
+      "index": 13,
+      "context_length": 202752,
+      "prediction": {
+        "pred_step_index": -1,
+        "latency": 0.7713629999998375,
+        "input_tokens": 5136,
+        "output_tokens": 13,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 0,
+        "agent_accuracy": 0
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          20
+        ]
+      ]
+    },
+    "data/gold/agentrx/tau_retail.jsonl:14": {
+      "source": "data/gold/agentrx/tau_retail.jsonl",
+      "index": 14,
+      "context_length": 202752,
+      "prediction": {
+        "pred_step_index": -1,
+        "latency": 1.5501753000003191,
+        "input_tokens": 11187,
+        "output_tokens": 16,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 0,
+        "agent_accuracy": 0
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          38
+        ]
+      ]
+    },
+    "data/gold/agentrx/tau_retail.jsonl:15": {
+      "source": "data/gold/agentrx/tau_retail.jsonl",
+      "index": 15,
+      "context_length": 202752,
+      "prediction": {
+        "pred_step_index": -1,
+        "latency": 0.8385948000000099,
+        "input_tokens": 5676,
+        "output_tokens": 16,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 0,
+        "agent_accuracy": 0
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          26
+        ]
+      ]
+    },
+    "data/gold/agentrx/tau_retail.jsonl:16": {
+      "source": "data/gold/agentrx/tau_retail.jsonl",
+      "index": 16,
+      "context_length": 202752,
+      "prediction": {
+        "pred_step_index": 23,
+        "latency": 0.9644533000000592,
+        "input_tokens": 7187,
+        "output_tokens": 13,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 0,
+        "agent_accuracy": 0
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          36
+        ]
+      ]
+    },
+    "data/gold/agentrx/tau_retail.jsonl:17": {
+      "source": "data/gold/agentrx/tau_retail.jsonl",
+      "index": 17,
+      "context_length": 202752,
+      "prediction": {
+        "pred_step_index": 35,
+        "latency": 1.2913336999999956,
+        "input_tokens": 9226,
+        "output_tokens": 16,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 0,
+        "agent_accuracy": 0
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          36
+        ]
+      ]
+    },
+    "data/gold/agentrx/tau_retail.jsonl:18": {
+      "source": "data/gold/agentrx/tau_retail.jsonl",
+      "index": 18,
+      "context_length": 202752,
+      "prediction": {
+        "pred_step_index": 21,
+        "latency": 1.1142499000002317,
+        "input_tokens": 8017,
+        "output_tokens": 16,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 1,
+        "agent_accuracy": 1
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          28
+        ]
+      ]
+    },
+    "data/gold/agentrx/tau_retail.jsonl:19": {
+      "source": "data/gold/agentrx/tau_retail.jsonl",
+      "index": 19,
+      "context_length": 202752,
+      "prediction": {
+        "pred_step_index": 21,
+        "latency": 1.00219560000005,
+        "input_tokens": 7361,
+        "output_tokens": 16,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 1,
+        "agent_accuracy": 1
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          30
+        ]
+      ]
+    },
+    "data/gold/agentrx/tau_retail.jsonl:20": {
+      "source": "data/gold/agentrx/tau_retail.jsonl",
+      "index": 20,
+      "context_length": 202752,
+      "prediction": {
+        "pred_step_index": -1,
+        "latency": 1.1057701000004272,
+        "input_tokens": 8002,
+        "output_tokens": 16,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 0,
+        "agent_accuracy": 0
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          26
+        ]
+      ]
+    },
+    "data/gold/agentrx/tau_retail.jsonl:21": {
+      "source": "data/gold/agentrx/tau_retail.jsonl",
+      "index": 21,
+      "context_length": 202752,
+      "prediction": {
+        "pred_step_index": -1,
+        "latency": 0.8562467000001561,
+        "input_tokens": 6121,
+        "output_tokens": 16,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 0,
+        "agent_accuracy": 0
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          26
+        ]
+      ]
+    },
+    "data/gold/agentrx/tau_retail.jsonl:22": {
+      "source": "data/gold/agentrx/tau_retail.jsonl",
+      "index": 22,
+      "context_length": 202752,
+      "prediction": {
+        "pred_step_index": 19,
+        "latency": 1.0568639000002804,
+        "input_tokens": 7864,
+        "output_tokens": 13,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 0,
+        "agent_accuracy": 0
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          28
+        ]
+      ]
+    },
+    "data/gold/agentrx/tau_retail.jsonl:23": {
+      "source": "data/gold/agentrx/tau_retail.jsonl",
+      "index": 23,
+      "context_length": 202752,
+      "prediction": {
+        "pred_step_index": -1,
+        "latency": 1.1751603000002433,
+        "input_tokens": 8405,
+        "output_tokens": 16,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 0,
+        "agent_accuracy": 0
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          38
+        ]
+      ]
+    },
+    "data/gold/agentrx/tau_retail.jsonl:24": {
+      "source": "data/gold/agentrx/tau_retail.jsonl",
+      "index": 24,
+      "context_length": 202752,
+      "prediction": {
+        "pred_step_index": 11,
+        "latency": 1.572693299999628,
+        "input_tokens": 11112,
+        "output_tokens": 16,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 0,
+        "agent_accuracy": 0
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          40
+        ]
+      ]
+    },
+    "data/gold/agentrx/tau_retail.jsonl:25": {
+      "source": "data/gold/agentrx/tau_retail.jsonl",
+      "index": 25,
+      "context_length": 202752,
+      "prediction": {
+        "pred_step_index": 15,
+        "latency": 1.1321729999999661,
+        "input_tokens": 8094,
+        "output_tokens": 13,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 0,
+        "agent_accuracy": 1
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          38
+        ]
+      ]
+    },
+    "data/gold/agentrx/tau_retail.jsonl:26": {
+      "source": "data/gold/agentrx/tau_retail.jsonl",
+      "index": 26,
+      "context_length": 202752,
+      "prediction": {
+        "pred_step_index": 29,
+        "latency": 2.150782199999867,
+        "input_tokens": 14434,
+        "output_tokens": 16,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 0,
+        "agent_accuracy": 1
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          46
+        ]
+      ]
+    },
+    "data/gold/agentrx/tau_retail.jsonl:27": {
+      "source": "data/gold/agentrx/tau_retail.jsonl",
+      "index": 27,
+      "context_length": 202752,
+      "prediction": {
+        "pred_step_index": 21,
+        "latency": 1.8919098000001213,
+        "input_tokens": 12505,
+        "output_tokens": 16,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 0,
+        "agent_accuracy": 1
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          58
+        ]
+      ]
+    },
+    "data/gold/agentrx/tau_retail.jsonl:28": {
+      "source": "data/gold/agentrx/tau_retail.jsonl",
+      "index": 28,
+      "context_length": 202752,
+      "prediction": {
+        "pred_step_index": 15,
+        "latency": 1.6761948999997003,
+        "input_tokens": 11506,
+        "output_tokens": 16,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 0,
+        "agent_accuracy": 1
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          40
+        ],
+        [
+          40,
+          48
+        ]
+      ]
+    },
+    "data/gold/trace_elephant/trajectories.jsonl:0": {
+      "source": "data/gold/trace_elephant/trajectories.jsonl",
+      "index": 0,
+      "context_length": 202752,
+      "prediction": {
+        "pred_step_index": -1,
+        "latency": 9.29723120000017,
+        "input_tokens": 38605,
+        "output_tokens": 16,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 0,
+        "agent_accuracy": 0
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          9
+        ]
+      ]
+    },
+    "data/gold/trace_elephant/trajectories.jsonl:1": {
+      "source": "data/gold/trace_elephant/trajectories.jsonl",
+      "index": 1,
+      "context_length": 202752,
+      "prediction": {
+        "pred_step_index": 4,
+        "latency": 4.3126871999998,
+        "input_tokens": 22452,
+        "output_tokens": 13,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 0,
+        "agent_accuracy": 0
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          8
+        ]
+      ]
+    },
+    "data/gold/trace_elephant/trajectories.jsonl:2": {
+      "source": "data/gold/trace_elephant/trajectories.jsonl",
+      "index": 2,
+      "context_length": 202752,
+      "prediction": {
+        "pred_step_index": 5,
+        "latency": 15.412220400000024,
+        "input_tokens": 51780,
+        "output_tokens": 16,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 0,
+        "agent_accuracy": 0
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          12
+        ]
+      ]
+    },
+    "data/gold/trace_elephant/trajectories.jsonl:3": {
+      "source": "data/gold/trace_elephant/trajectories.jsonl",
+      "index": 3,
+      "context_length": 202752,
+      "prediction": {
+        "pred_step_index": -1,
+        "latency": 15.275384799999756,
+        "input_tokens": 50815,
+        "output_tokens": 16,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 0,
+        "agent_accuracy": 0
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          10
+        ]
+      ]
+    },
+    "data/gold/trace_elephant/trajectories.jsonl:4": {
+      "source": "data/gold/trace_elephant/trajectories.jsonl",
+      "index": 4,
+      "context_length": 202752,
+      "prediction": {
+        "pred_step_index": 10,
+        "latency": 16.237925899999937,
+        "input_tokens": 52726,
+        "output_tokens": 16,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 0,
+        "agent_accuracy": 0
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          12
+        ]
+      ]
+    },
+    "data/gold/trace_elephant/trajectories.jsonl:5": {
+      "source": "data/gold/trace_elephant/trajectories.jsonl",
+      "index": 5,
+      "context_length": 202752,
+      "prediction": {
+        "pred_step_index": -1,
+        "latency": 7.594444100000146,
+        "input_tokens": 32792,
+        "output_tokens": 13,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 0,
+        "agent_accuracy": 0
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          10
+        ]
+      ]
+    },
+    "data/gold/trace_elephant/trajectories.jsonl:6": {
+      "source": "data/gold/trace_elephant/trajectories.jsonl",
+      "index": 6,
+      "context_length": 202752,
+      "prediction": {
+        "pred_step_index": 4,
+        "latency": 2.370451900000262,
+        "input_tokens": 12315,
+        "output_tokens": 13,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 0,
+        "agent_accuracy": 0
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          6
+        ],
+        [
+          6,
+          48
+        ],
+        [
+          48,
+          54
+        ]
+      ]
+    },
+    "data/gold/trace_elephant/trajectories.jsonl:7": {
+      "source": "data/gold/trace_elephant/trajectories.jsonl",
+      "index": 7,
+      "context_length": 202752,
+      "prediction": {
+        "pred_step_index": -1,
+        "latency": 5.742814199999884,
+        "input_tokens": 28559,
+        "output_tokens": 13,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 0,
+        "agent_accuracy": 0
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          10
+        ]
+      ]
+    },
+    "data/gold/trace_elephant/trajectories.jsonl:8": {
+      "source": "data/gold/trace_elephant/trajectories.jsonl",
+      "index": 8,
+      "context_length": 202752,
+      "prediction": {
+        "pred_step_index": -1,
+        "latency": 118.02765809999983,
+        "input_tokens": 162043,
+        "output_tokens": 29,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 0,
+        "agent_accuracy": 0
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          4
+        ],
+        [
+          4,
+          24
+        ]
+      ]
+    },
+    "data/gold/trace_elephant/trajectories.jsonl:9": {
+      "source": "data/gold/trace_elephant/trajectories.jsonl",
+      "index": 9,
+      "context_length": 202752,
+      "prediction": {
+        "pred_step_index": -1,
+        "latency": 21.705403500000102,
+        "input_tokens": 60367,
+        "output_tokens": 13,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 0,
+        "agent_accuracy": 0
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          12
+        ]
+      ]
+    },
+    "data/gold/trace_elephant/trajectories.jsonl:10": {
+      "source": "data/gold/trace_elephant/trajectories.jsonl",
+      "index": 10,
+      "context_length": 202752,
+      "prediction": {
+        "pred_step_index": 12,
+        "latency": 31.097255900000164,
+        "input_tokens": 76371,
+        "output_tokens": 13,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 0,
+        "agent_accuracy": 0
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          14
+        ]
+      ]
+    },
+    "data/gold/trace_elephant/trajectories.jsonl:11": {
+      "source": "data/gold/trace_elephant/trajectories.jsonl",
+      "index": 11,
+      "context_length": 202752,
+      "prediction": {
+        "pred_step_index": -1,
+        "latency": 12.340785500000038,
+        "input_tokens": 44240,
+        "output_tokens": 13,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 0,
+        "agent_accuracy": 0
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          12
+        ]
+      ]
+    },
+    "data/gold/trace_elephant/trajectories.jsonl:12": {
+      "source": "data/gold/trace_elephant/trajectories.jsonl",
+      "index": 12,
+      "context_length": 202752,
+      "status": "token_limit_exceeded",
+      "prediction": null,
+      "metrics": {
+        "step_accuracy": 0,
+        "agent_accuracy": 0
+      },
+      "error": {
+        "type": "ResponseError",
+        "message": "the prompt is longer than the context length currently available to the model; shorten the prompt, adjust the context length in settings, or use a model with a longer context length (status code: 400)"
+      },
+      "slice_ranges": [
+        [
+          0,
+          5
+        ],
+        [
+          5,
+          21
+        ]
+      ]
+    },
+    "data/gold/trace_elephant/trajectories.jsonl:13": {
+      "source": "data/gold/trace_elephant/trajectories.jsonl",
+      "index": 13,
+      "context_length": 202752,
+      "prediction": {
+        "pred_step_index": 3,
+        "latency": 2.3794394999999895,
+        "input_tokens": 15326,
+        "output_tokens": 16,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 0,
+        "agent_accuracy": 0
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          7
+        ]
+      ]
+    },
+    "data/gold/trace_elephant/trajectories.jsonl:14": {
+      "source": "data/gold/trace_elephant/trajectories.jsonl",
+      "index": 14,
+      "context_length": 202752,
+      "prediction": {
+        "pred_step_index": 8,
+        "latency": 7.301282000000356,
+        "input_tokens": 33127,
+        "output_tokens": 13,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 1,
+        "agent_accuracy": 1
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          12
+        ]
+      ]
+    },
+    "data/gold/trace_elephant/trajectories.jsonl:15": {
+      "source": "data/gold/trace_elephant/trajectories.jsonl",
+      "index": 15,
+      "context_length": 202752,
+      "prediction": {
+        "pred_step_index": 17,
+        "latency": 102.94294099999979,
+        "input_tokens": 144952,
+        "output_tokens": 13,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 0,
+        "agent_accuracy": 0
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          19
+        ]
+      ]
+    },
+    "data/gold/trace_elephant/trajectories.jsonl:16": {
+      "source": "data/gold/trace_elephant/trajectories.jsonl",
+      "index": 16,
+      "context_length": 202752,
+      "prediction": {
+        "pred_step_index": 2,
+        "latency": 3.7048500999999305,
+        "input_tokens": 13962,
+        "output_tokens": 13,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 0,
+        "agent_accuracy": 0
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          6
+        ]
+      ]
+    },
+    "data/gold/trace_elephant/trajectories.jsonl:17": {
+      "source": "data/gold/trace_elephant/trajectories.jsonl",
+      "index": 17,
+      "context_length": 202752,
+      "status": "token_limit_exceeded",
+      "prediction": null,
+      "metrics": {
+        "step_accuracy": 0,
+        "agent_accuracy": 0
+      },
+      "error": {
+        "type": "ResponseError",
+        "message": "the prompt is longer than the context length currently available to the model; shorten the prompt, adjust the context length in settings, or use a model with a longer context length (status code: 400)"
+      },
+      "slice_ranges": [
+        [
+          0,
+          3
+        ],
+        [
+          3,
+          37
+        ],
+        [
+          37,
+          43
+        ]
+      ]
+    },
+    "data/gold/trace_elephant/trajectories.jsonl:18": {
+      "source": "data/gold/trace_elephant/trajectories.jsonl",
+      "index": 18,
+      "context_length": 202752,
+      "prediction": {
+        "pred_step_index": -1,
+        "latency": 14.290908699999818,
+        "input_tokens": 53893,
+        "output_tokens": 32,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 0,
+        "agent_accuracy": 0
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          3
+        ],
+        [
+          3,
+          13
+        ]
+      ]
+    },
+    "data/gold/trace_elephant/trajectories.jsonl:19": {
+      "source": "data/gold/trace_elephant/trajectories.jsonl",
+      "index": 19,
+      "context_length": 202752,
+      "prediction": {
+        "pred_step_index": 13,
+        "latency": 17.263650299999426,
+        "input_tokens": 58652,
+        "output_tokens": 32,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 1,
+        "agent_accuracy": 1
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          3
+        ],
+        [
+          3,
+          19
+        ]
+      ]
+    },
+    "data/gold/trace_elephant/trajectories.jsonl:20": {
+      "source": "data/gold/trace_elephant/trajectories.jsonl",
+      "index": 20,
+      "context_length": 202752,
+      "prediction": {
+        "pred_step_index": 5,
+        "latency": 4.592634599999656,
+        "input_tokens": 22897,
+        "output_tokens": 13,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 1,
+        "agent_accuracy": 1
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          9
+        ],
+        [
+          9,
+          53
+        ],
+        [
+          53,
+          57
+        ]
+      ]
+    },
+    "data/gold/trace_elephant/trajectories.jsonl:21": {
+      "source": "data/gold/trace_elephant/trajectories.jsonl",
+      "index": 21,
+      "context_length": 202752,
+      "prediction": {
+        "pred_step_index": 2,
+        "latency": 1.547354499999983,
+        "input_tokens": 10042,
+        "output_tokens": 13,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 0,
+        "agent_accuracy": 1
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          4
+        ],
+        [
+          4,
+          20
+        ]
+      ]
+    },
+    "data/gold/trace_elephant/trajectories.jsonl:22": {
+      "source": "data/gold/trace_elephant/trajectories.jsonl",
+      "index": 22,
+      "context_length": 202752,
+      "prediction": {
+        "pred_step_index": 7,
+        "latency": 170.42358079999985,
+        "input_tokens": 192277,
+        "output_tokens": 26,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 1,
+        "agent_accuracy": 1
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          3
+        ],
+        [
+          3,
+          33
+        ],
+        [
+          33,
+          55
+        ]
+      ]
+    },
+    "data/gold/trace_elephant/trajectories.jsonl:23": {
+      "source": "data/gold/trace_elephant/trajectories.jsonl",
+      "index": 23,
+      "context_length": 202752,
+      "prediction": {
+        "pred_step_index": -1,
+        "latency": 2.6602960000000166,
+        "input_tokens": 17038,
+        "output_tokens": 16,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 0,
+        "agent_accuracy": 0
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          7
+        ]
+      ]
+    },
+    "data/gold/trace_elephant/trajectories.jsonl:24": {
+      "source": "data/gold/trace_elephant/trajectories.jsonl",
+      "index": 24,
+      "context_length": 202752,
+      "prediction": {
+        "pred_step_index": 5,
+        "latency": 2.9836410999996588,
+        "input_tokens": 17623,
+        "output_tokens": 13,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 0,
+        "agent_accuracy": 0
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          7
+        ]
+      ]
+    },
+    "data/gold/trace_elephant/trajectories.jsonl:25": {
+      "source": "data/gold/trace_elephant/trajectories.jsonl",
+      "index": 25,
+      "context_length": 202752,
+      "prediction": {
+        "pred_step_index": 3,
+        "latency": 3.346591200000148,
+        "input_tokens": 19508,
+        "output_tokens": 16,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 1,
+        "agent_accuracy": 1
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          7
+        ]
+      ]
+    },
+    "data/gold/trace_elephant/trajectories.jsonl:26": {
+      "source": "data/gold/trace_elephant/trajectories.jsonl",
+      "index": 26,
+      "context_length": 202752,
+      "prediction": {
+        "pred_step_index": 5,
+        "latency": 1.657652699999744,
+        "input_tokens": 10835,
+        "output_tokens": 13,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 0,
+        "agent_accuracy": 0
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          5
+        ],
+        [
+          5,
+          25
+        ]
+      ]
+    },
+    "data/gold/trace_elephant/trajectories.jsonl:27": {
+      "source": "data/gold/trace_elephant/trajectories.jsonl",
+      "index": 27,
+      "context_length": 202752,
+      "prediction": {
+        "pred_step_index": 3,
+        "latency": 1.3219561999999314,
+        "input_tokens": 9273,
+        "output_tokens": 16,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 0,
+        "agent_accuracy": 0
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          5
+        ]
+      ]
+    },
+    "data/gold/trace_elephant/trajectories.jsonl:28": {
+      "source": "data/gold/trace_elephant/trajectories.jsonl",
+      "index": 28,
+      "context_length": 202752,
+      "status": "token_limit_exceeded",
+      "prediction": null,
+      "metrics": {
+        "step_accuracy": 0,
+        "agent_accuracy": 0
+      },
+      "error": {
+        "type": "ResponseError",
+        "message": "the prompt is longer than the context length currently available to the model; shorten the prompt, adjust the context length in settings, or use a model with a longer context length (status code: 400)"
+      },
+      "slice_ranges": [
+        [
+          0,
+          3
+        ],
+        [
+          3,
+          33
+        ]
+      ]
+    },
+    "data/gold/trace_elephant/trajectories.jsonl:29": {
+      "source": "data/gold/trace_elephant/trajectories.jsonl",
+      "index": 29,
+      "context_length": 202752,
+      "prediction": {
+        "pred_step_index": 2,
+        "latency": 2.735243300000093,
+        "input_tokens": 17413,
+        "output_tokens": 13,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 0,
+        "agent_accuracy": 0
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          6
+        ],
+        [
+          6,
+          26
+        ],
+        [
+          26,
+          32
+        ]
+      ]
+    },
+    "data/gold/trace_elephant/trajectories.jsonl:30": {
+      "source": "data/gold/trace_elephant/trajectories.jsonl",
+      "index": 30,
+      "context_length": 202752,
+      "prediction": {
+        "pred_step_index": 11,
+        "latency": 37.45937119999962,
+        "input_tokens": 89900,
+        "output_tokens": 29,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 1,
+        "agent_accuracy": 1
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          3
+        ],
+        [
+          3,
+          19
+        ]
+      ]
+    },
+    "data/gold/trace_elephant/trajectories.jsonl:31": {
+      "source": "data/gold/trace_elephant/trajectories.jsonl",
+      "index": 31,
+      "context_length": 202752,
+      "status": "token_limit_exceeded",
+      "prediction": null,
+      "metrics": {
+        "step_accuracy": 0,
+        "agent_accuracy": 0
+      },
+      "error": {
+        "type": "ResponseError",
+        "message": "the prompt is longer than the context length currently available to the model; shorten the prompt, adjust the context length in settings, or use a model with a longer context length (status code: 400)"
+      },
+      "slice_ranges": [
+        [
+          0,
+          3
+        ],
+        [
+          3,
+          33
+        ]
+      ]
+    },
+    "data/gold/trace_elephant/trajectories.jsonl:32": {
+      "source": "data/gold/trace_elephant/trajectories.jsonl",
+      "index": 32,
+      "context_length": 202752,
+      "prediction": {
+        "pred_step_index": -1,
+        "latency": 4.14618449999989,
+        "input_tokens": 23255,
+        "output_tokens": 13,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 0,
+        "agent_accuracy": 0
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          9
+        ]
+      ]
+    },
+    "data/gold/trace_elephant/trajectories.jsonl:33": {
+      "source": "data/gold/trace_elephant/trajectories.jsonl",
+      "index": 33,
+      "context_length": 202752,
+      "prediction": {
+        "pred_step_index": 5,
+        "latency": 74.26195180000013,
+        "input_tokens": 127103,
+        "output_tokens": 29,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 0,
+        "agent_accuracy": 1
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          3
+        ],
+        [
+          3,
+          21
+        ]
+      ]
+    },
+    "data/gold/trace_elephant/trajectories.jsonl:34": {
+      "source": "data/gold/trace_elephant/trajectories.jsonl",
+      "index": 34,
+      "context_length": 202752,
+      "status": "token_limit_exceeded",
+      "prediction": null,
+      "metrics": {
+        "step_accuracy": 0,
+        "agent_accuracy": 0
+      },
+      "error": {
+        "type": "ResponseError",
+        "message": "the prompt is longer than the context length currently available to the model; shorten the prompt, adjust the context length in settings, or use a model with a longer context length (status code: 400)"
+      },
+      "slice_ranges": [
+        [
+          0,
+          3
+        ],
+        [
+          3,
+          47
+        ],
+        [
+          47,
+          55
+        ]
+      ]
+    },
+    "data/gold/trace_elephant/trajectories.jsonl:35": {
+      "source": "data/gold/trace_elephant/trajectories.jsonl",
+      "index": 35,
+      "context_length": 202752,
+      "prediction": {
+        "pred_step_index": -1,
+        "latency": 7.387584000000061,
+        "input_tokens": 33665,
+        "output_tokens": 16,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 0,
+        "agent_accuracy": 0
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          11
+        ]
+      ]
+    },
+    "data/gold/trace_elephant/trajectories.jsonl:36": {
+      "source": "data/gold/trace_elephant/trajectories.jsonl",
+      "index": 36,
+      "context_length": 202752,
+      "prediction": {
+        "pred_step_index": 3,
+        "latency": 1.8285839999998643,
+        "input_tokens": 9318,
+        "output_tokens": 16,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 1,
+        "agent_accuracy": 1
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          5
+        ]
+      ]
+    },
+    "data/gold/trace_elephant/trajectories.jsonl:37": {
+      "source": "data/gold/trace_elephant/trajectories.jsonl",
+      "index": 37,
+      "context_length": 202752,
+      "prediction": {
+        "pred_step_index": 3,
+        "latency": 1.4379916999996567,
+        "input_tokens": 10342,
+        "output_tokens": 13,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 1,
+        "agent_accuracy": 1
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          5
+        ]
+      ]
+    },
+    "data/gold/trace_elephant/trajectories.jsonl:38": {
+      "source": "data/gold/trace_elephant/trajectories.jsonl",
+      "index": 38,
+      "context_length": 202752,
+      "prediction": {
+        "pred_step_index": -1,
+        "latency": 15.80306390000078,
+        "input_tokens": 56995,
+        "output_tokens": 32,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 0,
+        "agent_accuracy": 0
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          3
+        ],
+        [
+          3,
+          13
+        ]
+      ]
+    },
+    "data/gold/trace_elephant/trajectories.jsonl:39": {
+      "source": "data/gold/trace_elephant/trajectories.jsonl",
+      "index": 39,
+      "context_length": 202752,
+      "prediction": {
+        "pred_step_index": 3,
+        "latency": 1.2660367999997106,
+        "input_tokens": 5675,
+        "output_tokens": 13,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 0,
+        "agent_accuracy": 0
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          3
+        ],
+        [
+          3,
+          13
+        ]
+      ]
+    },
+    "data/gold/trace_elephant/trajectories.jsonl:40": {
+      "source": "data/gold/trace_elephant/trajectories.jsonl",
+      "index": 40,
+      "context_length": 202752,
+      "prediction": {
+        "pred_step_index": 5,
+        "latency": 6.0863257999999405,
+        "input_tokens": 29883,
+        "output_tokens": 13,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 1,
+        "agent_accuracy": 1
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          11
+        ]
+      ]
+    },
+    "data/gold/trace_elephant/trajectories.jsonl:41": {
+      "source": "data/gold/trace_elephant/trajectories.jsonl",
+      "index": 41,
+      "context_length": 202752,
+      "prediction": {
+        "pred_step_index": -1,
+        "latency": 8.15525770000022,
+        "input_tokens": 35061,
+        "output_tokens": 13,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 0,
+        "agent_accuracy": 0
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          11
+        ]
+      ]
+    },
+    "data/gold/trace_elephant/trajectories.jsonl:42": {
+      "source": "data/gold/trace_elephant/trajectories.jsonl",
+      "index": 42,
+      "context_length": 202752,
+      "status": "token_limit_exceeded",
+      "prediction": null,
+      "metrics": {
+        "step_accuracy": 0,
+        "agent_accuracy": 0
+      },
+      "error": {
+        "type": "ResponseError",
+        "message": "the prompt is longer than the context length currently available to the model; shorten the prompt, adjust the context length in settings, or use a model with a longer context length (status code: 400)"
+      },
+      "slice_ranges": [
+        [
+          0,
+          3
+        ],
+        [
+          3,
+          23
+        ]
+      ]
+    },
+    "data/gold/trace_elephant/trajectories.jsonl:43": {
+      "source": "data/gold/trace_elephant/trajectories.jsonl",
+      "index": 43,
+      "context_length": 202752,
+      "prediction": {
+        "pred_step_index": -1,
+        "latency": 20.76589000000058,
+        "input_tokens": 61881,
+        "output_tokens": 13,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 0,
+        "agent_accuracy": 0
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          15
+        ]
+      ]
+    },
+    "data/gold/trace_elephant/trajectories.jsonl:44": {
+      "source": "data/gold/trace_elephant/trajectories.jsonl",
+      "index": 44,
+      "context_length": 202752,
+      "prediction": {
+        "pred_step_index": 3,
+        "latency": 1.4485612999997102,
+        "input_tokens": 5081,
+        "output_tokens": 13,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 0,
+        "agent_accuracy": 0
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          3
+        ],
+        [
+          3,
+          15
+        ]
+      ]
+    },
+    "data/gold/trace_elephant/trajectories.jsonl:45": {
+      "source": "data/gold/trace_elephant/trajectories.jsonl",
+      "index": 45,
+      "context_length": 202752,
+      "status": "token_limit_exceeded",
+      "prediction": null,
+      "metrics": {
+        "step_accuracy": 0,
+        "agent_accuracy": 0
+      },
+      "error": {
+        "type": "ResponseError",
+        "message": "the prompt is longer than the context length currently available to the model; shorten the prompt, adjust the context length in settings, or use a model with a longer context length (status code: 400)"
+      },
+      "slice_ranges": [
+        [
+          0,
+          7
+        ],
+        [
+          7,
+          49
+        ],
+        [
+          49,
+          59
+        ]
+      ]
+    },
+    "data/gold/trace_elephant/trajectories.jsonl:46": {
+      "source": "data/gold/trace_elephant/trajectories.jsonl",
+      "index": 46,
+      "context_length": 202752,
+      "prediction": {
+        "pred_step_index": 3,
+        "latency": 1.8452097999997932,
+        "input_tokens": 12127,
+        "output_tokens": 13,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 0,
+        "agent_accuracy": 1
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          5
+        ],
+        [
+          5,
+          17
+        ]
+      ]
+    },
+    "data/gold/trace_elephant/trajectories.jsonl:47": {
+      "source": "data/gold/trace_elephant/trajectories.jsonl",
+      "index": 47,
+      "context_length": 202752,
+      "status": "token_limit_exceeded",
+      "prediction": null,
+      "metrics": {
+        "step_accuracy": 0,
+        "agent_accuracy": 0
+      },
+      "error": {
+        "type": "ResponseError",
+        "message": "the prompt is longer than the context length currently available to the model; shorten the prompt, adjust the context length in settings, or use a model with a longer context length (status code: 400)"
+      },
+      "slice_ranges": [
+        [
+          0,
+          3
+        ],
+        [
+          3,
+          45
+        ],
+        [
+          45,
+          51
+        ]
+      ]
+    },
+    "data/gold/trace_elephant/trajectories.jsonl:48": {
+      "source": "data/gold/trace_elephant/trajectories.jsonl",
+      "index": 48,
+      "context_length": 202752,
+      "prediction": {
+        "pred_step_index": 5,
+        "latency": 1.8269842999998218,
+        "input_tokens": 12756,
+        "output_tokens": 13,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 1,
+        "agent_accuracy": 1
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          7
+        ]
+      ]
+    },
+    "data/gold/trace_elephant/trajectories.jsonl:49": {
+      "source": "data/gold/trace_elephant/trajectories.jsonl",
+      "index": 49,
+      "context_length": 202752,
+      "prediction": {
+        "pred_step_index": -1,
+        "latency": 22.420786199999384,
+        "input_tokens": 68785,
+        "output_tokens": 29,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 0,
+        "agent_accuracy": 0
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          3
+        ],
+        [
+          3,
+          15
+        ]
+      ]
+    },
+    "data/gold/trace_elephant/trajectories.jsonl:50": {
+      "source": "data/gold/trace_elephant/trajectories.jsonl",
+      "index": 50,
+      "context_length": 202752,
+      "prediction": {
+        "pred_step_index": -1,
+        "latency": 10.507100799999535,
+        "input_tokens": 39818,
+        "output_tokens": 16,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 0,
+        "agent_accuracy": 0
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          11
+        ]
+      ]
+    },
+    "data/gold/trace_elephant/trajectories.jsonl:51": {
+      "source": "data/gold/trace_elephant/trajectories.jsonl",
+      "index": 51,
+      "context_length": 202752,
+      "prediction": {
+        "pred_step_index": -1,
+        "latency": 8.028183800000079,
+        "input_tokens": 34432,
+        "output_tokens": 13,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 0,
+        "agent_accuracy": 0
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          10
+        ]
+      ]
+    },
+    "data/gold/trace_elephant/trajectories.jsonl:52": {
+      "source": "data/gold/trace_elephant/trajectories.jsonl",
+      "index": 52,
+      "context_length": 202752,
+      "status": "token_limit_exceeded",
+      "prediction": null,
+      "metrics": {
+        "step_accuracy": 0,
+        "agent_accuracy": 0
+      },
+      "error": {
+        "type": "ResponseError",
+        "message": "the prompt is longer than the context length currently available to the model; shorten the prompt, adjust the context length in settings, or use a model with a longer context length (status code: 400)"
+      },
+      "slice_ranges": [
+        [
+          0,
+          3
+        ],
+        [
+          3,
+          52
+        ],
+        [
+          52,
+          58
+        ]
+      ]
+    },
+    "data/gold/trace_elephant/trajectories.jsonl:53": {
+      "source": "data/gold/trace_elephant/trajectories.jsonl",
+      "index": 53,
+      "context_length": 202752,
+      "status": "token_limit_exceeded",
+      "prediction": null,
+      "metrics": {
+        "step_accuracy": 0,
+        "agent_accuracy": 0
+      },
+      "error": {
+        "type": "ResponseError",
+        "message": "the prompt is longer than the context length currently available to the model; shorten the prompt, adjust the context length in settings, or use a model with a longer context length (status code: 400)"
+      },
+      "slice_ranges": [
+        [
+          0,
+          3
+        ],
+        [
+          3,
+          51
+        ],
+        [
+          51,
+          59
+        ]
+      ]
+    },
+    "data/gold/trace_elephant/trajectories.jsonl:54": {
+      "source": "data/gold/trace_elephant/trajectories.jsonl",
+      "index": 54,
+      "context_length": 202752,
+      "prediction": {
+        "pred_step_index": -1,
+        "latency": 27.508503799999744,
+        "input_tokens": 76385,
+        "output_tokens": 26,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 0,
+        "agent_accuracy": 0
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          3
+        ],
+        [
+          3,
+          17
+        ]
+      ]
+    },
+    "data/gold/trace_elephant/trajectories.jsonl:55": {
+      "source": "data/gold/trace_elephant/trajectories.jsonl",
+      "index": 55,
+      "context_length": 202752,
+      "prediction": {
+        "pred_step_index": 7,
+        "latency": 11.668364900000597,
+        "input_tokens": 42349,
+        "output_tokens": 16,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 1,
+        "agent_accuracy": 1
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          11
+        ]
+      ]
+    },
+    "data/gold/trace_elephant/trajectories.jsonl:56": {
+      "source": "data/gold/trace_elephant/trajectories.jsonl",
+      "index": 56,
+      "context_length": 202752,
+      "prediction": {
+        "pred_step_index": 15,
+        "latency": 27.098850800000037,
+        "input_tokens": 75478,
+        "output_tokens": 26,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 0,
+        "agent_accuracy": 1
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          3
+        ],
+        [
+          3,
+          17
+        ]
+      ]
+    },
+    "data/gold/trace_elephant/trajectories.jsonl:57": {
+      "source": "data/gold/trace_elephant/trajectories.jsonl",
+      "index": 57,
+      "context_length": 202752,
+      "prediction": {
+        "pred_step_index": -1,
+        "latency": 17.48520330000065,
+        "input_tokens": 54386,
+        "output_tokens": 16,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 0,
+        "agent_accuracy": 0
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          13
+        ]
+      ]
+    },
+    "data/gold/trace_elephant/trajectories.jsonl:58": {
+      "source": "data/gold/trace_elephant/trajectories.jsonl",
+      "index": 58,
+      "context_length": 202752,
+      "status": "token_limit_exceeded",
+      "prediction": null,
+      "metrics": {
+        "step_accuracy": 0,
+        "agent_accuracy": 0
+      },
+      "error": {
+        "type": "ResponseError",
+        "message": "the prompt is longer than the context length currently available to the model; shorten the prompt, adjust the context length in settings, or use a model with a longer context length (status code: 400)"
+      },
+      "slice_ranges": [
+        [
+          0,
+          3
+        ],
+        [
+          3,
+          53
+        ],
+        [
+          53,
+          59
+        ]
+      ]
+    },
+    "data/gold/trace_elephant/trajectories.jsonl:59": {
+      "source": "data/gold/trace_elephant/trajectories.jsonl",
+      "index": 59,
+      "context_length": 202752,
+      "prediction": {
+        "pred_step_index": 2,
+        "latency": 2.0571767999999793,
+        "input_tokens": 14141,
+        "output_tokens": 13,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 1,
+        "agent_accuracy": 1
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          6
+        ]
+      ]
+    },
+    "data/gold/trace_elephant/trajectories.jsonl:60": {
+      "source": "data/gold/trace_elephant/trajectories.jsonl",
+      "index": 60,
+      "context_length": 202752,
+      "prediction": {
+        "pred_step_index": -1,
+        "latency": 53.73213020000003,
+        "input_tokens": 104006,
+        "output_tokens": 13,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 0,
+        "agent_accuracy": 0
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          15
+        ]
+      ]
+    },
+    "data/gold/trace_elephant/trajectories.jsonl:61": {
+      "source": "data/gold/trace_elephant/trajectories.jsonl",
+      "index": 61,
+      "context_length": 202752,
+      "prediction": {
+        "pred_step_index": -1,
+        "latency": 9.62015490000067,
+        "input_tokens": 36234,
+        "output_tokens": 16,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 0,
+        "agent_accuracy": 0
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          9
+        ]
+      ]
+    },
+    "data/gold/trace_elephant/trajectories.jsonl:62": {
+      "source": "data/gold/trace_elephant/trajectories.jsonl",
+      "index": 62,
+      "context_length": 202752,
+      "prediction": {
+        "pred_step_index": 5,
+        "latency": 2.038717899999938,
+        "input_tokens": 10197,
+        "output_tokens": 16,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 0,
+        "agent_accuracy": 0
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          5
+        ],
+        [
+          5,
+          37
+        ]
+      ]
+    },
+    "data/gold/trace_elephant/trajectories.jsonl:63": {
+      "source": "data/gold/trace_elephant/trajectories.jsonl",
+      "index": 63,
+      "context_length": 202752,
+      "prediction": {
+        "pred_step_index": 13,
+        "latency": 34.93668170000001,
+        "input_tokens": 82500,
+        "output_tokens": 13,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 1,
+        "agent_accuracy": 1
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          15
+        ]
+      ]
+    },
+    "data/gold/trace_elephant/trajectories.jsonl:64": {
+      "source": "data/gold/trace_elephant/trajectories.jsonl",
+      "index": 64,
+      "context_length": 202752,
+      "prediction": {
+        "pred_step_index": 9,
+        "latency": 9.511200299999473,
+        "input_tokens": 36812,
+        "output_tokens": 13,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 1,
+        "agent_accuracy": 1
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          11
+        ]
+      ]
+    },
+    "data/gold/trace_elephant/trajectories.jsonl:65": {
+      "source": "data/gold/trace_elephant/trajectories.jsonl",
+      "index": 65,
+      "context_length": 202752,
+      "prediction": {
+        "pred_step_index": 3,
+        "latency": 10.906911600000058,
+        "input_tokens": 41774,
+        "output_tokens": 13,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 0,
+        "agent_accuracy": 0
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          11
+        ]
+      ]
+    },
+    "data/gold/trace_elephant/trajectories.jsonl:66": {
+      "source": "data/gold/trace_elephant/trajectories.jsonl",
+      "index": 66,
+      "context_length": 202752,
+      "prediction": {
+        "pred_step_index": -1,
+        "latency": 3.6659178999998403,
+        "input_tokens": 18989,
+        "output_tokens": 16,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 0,
+        "agent_accuracy": 0
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          7
+        ]
+      ]
+    },
+    "data/gold/trace_elephant/trajectories.jsonl:67": {
+      "source": "data/gold/trace_elephant/trajectories.jsonl",
+      "index": 67,
+      "context_length": 202752,
+      "prediction": {
+        "pred_step_index": -1,
+        "latency": 22.339132000000063,
+        "input_tokens": 64226,
+        "output_tokens": 13,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 0,
+        "agent_accuracy": 0
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          15
+        ]
+      ]
+    },
+    "data/gold/trace_elephant/trajectories.jsonl:68": {
+      "source": "data/gold/trace_elephant/trajectories.jsonl",
+      "index": 68,
+      "context_length": 202752,
+      "prediction": {
+        "pred_step_index": 6,
+        "latency": 5.871163599999818,
+        "input_tokens": 26883,
+        "output_tokens": 13,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 0,
+        "agent_accuracy": 0
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          10
+        ]
+      ]
+    },
+    "data/gold/trace_elephant/trajectories.jsonl:69": {
+      "source": "data/gold/trace_elephant/trajectories.jsonl",
+      "index": 69,
+      "context_length": 202752,
+      "prediction": {
+        "pred_step_index": 10,
+        "latency": 40.41454410000006,
+        "input_tokens": 89296,
+        "output_tokens": 13,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 0,
+        "agent_accuracy": 0
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          27
+        ]
+      ]
+    },
+    "data/gold/trace_elephant/trajectories.jsonl:70": {
+      "source": "data/gold/trace_elephant/trajectories.jsonl",
+      "index": 70,
+      "context_length": 202752,
+      "prediction": {
+        "pred_step_index": 4,
+        "latency": 2.20135719999962,
+        "input_tokens": 8043,
+        "output_tokens": 16,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 0,
+        "agent_accuracy": 1
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          4
+        ],
+        [
+          4,
+          22
+        ]
+      ]
+    },
+    "data/gold/trace_elephant/trajectories.jsonl:71": {
+      "source": "data/gold/trace_elephant/trajectories.jsonl",
+      "index": 71,
+      "context_length": 202752,
+      "status": "token_limit_exceeded",
+      "prediction": null,
+      "metrics": {
+        "step_accuracy": 0,
+        "agent_accuracy": 0
+      },
+      "error": {
+        "type": "ResponseError",
+        "message": "the prompt is longer than the context length currently available to the model; shorten the prompt, adjust the context length in settings, or use a model with a longer context length (status code: 400)"
+      },
+      "slice_ranges": [
+        [
+          0,
+          4
+        ],
+        [
+          4,
+          36
+        ]
+      ]
+    },
+    "data/gold/trace_elephant/trajectories.jsonl:72": {
+      "source": "data/gold/trace_elephant/trajectories.jsonl",
+      "index": 72,
+      "context_length": 202752,
+      "prediction": {
+        "pred_step_index": 3,
+        "latency": 1.446342100000038,
+        "input_tokens": 10345,
+        "output_tokens": 13,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 0,
+        "agent_accuracy": 1
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          5
+        ],
+        [
+          5,
+          49
+        ],
+        [
+          49,
+          57
+        ]
+      ]
+    },
+    "data/gold/trace_elephant/trajectories.jsonl:73": {
+      "source": "data/gold/trace_elephant/trajectories.jsonl",
+      "index": 73,
+      "context_length": 202752,
+      "prediction": {
+        "pred_step_index": 7,
+        "latency": 4.614446499999758,
+        "input_tokens": 24774,
+        "output_tokens": 13,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 0,
+        "agent_accuracy": 0
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          9
+        ]
+      ]
+    },
+    "data/gold/trace_elephant/trajectories.jsonl:74": {
+      "source": "data/gold/trace_elephant/trajectories.jsonl",
+      "index": 74,
+      "context_length": 202752,
+      "status": "token_limit_exceeded",
+      "prediction": null,
+      "metrics": {
+        "step_accuracy": 0,
+        "agent_accuracy": 0
+      },
+      "error": {
+        "type": "ResponseError",
+        "message": "the prompt is longer than the context length currently available to the model; shorten the prompt, adjust the context length in settings, or use a model with a longer context length (status code: 400)"
+      },
+      "slice_ranges": [
+        [
+          0,
+          3
+        ],
+        [
+          3,
+          47
+        ],
+        [
+          47,
+          59
+        ]
+      ]
+    },
+    "data/gold/trace_elephant/trajectories.jsonl:75": {
+      "source": "data/gold/trace_elephant/trajectories.jsonl",
+      "index": 75,
+      "context_length": 202752,
+      "prediction": {
+        "pred_step_index": 5,
+        "latency": 3.806629100000464,
+        "input_tokens": 22018,
+        "output_tokens": 13,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 0,
+        "agent_accuracy": 0
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          9
+        ]
+      ]
+    },
+    "data/gold/trace_elephant/trajectories.jsonl:76": {
+      "source": "data/gold/trace_elephant/trajectories.jsonl",
+      "index": 76,
+      "context_length": 202752,
+      "prediction": {
+        "pred_step_index": -1,
+        "latency": 9.963143099999797,
+        "input_tokens": 39658,
+        "output_tokens": 13,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 0,
+        "agent_accuracy": 0
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          11
+        ]
+      ]
+    },
+    "data/gold/trace_elephant/trajectories.jsonl:77": {
+      "source": "data/gold/trace_elephant/trajectories.jsonl",
+      "index": 77,
+      "context_length": 202752,
+      "prediction": {
+        "pred_step_index": -1,
+        "latency": 87.72500760000003,
+        "input_tokens": 138197,
+        "output_tokens": 29,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 0,
+        "agent_accuracy": 0
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          3
+        ],
+        [
+          3,
+          21
+        ]
+      ]
+    },
+    "data/gold/trace_elephant/trajectories.jsonl:78": {
+      "source": "data/gold/trace_elephant/trajectories.jsonl",
+      "index": 78,
+      "context_length": 202752,
+      "prediction": {
+        "pred_step_index": 5,
+        "latency": 89.32290599999942,
+        "input_tokens": 140847,
+        "output_tokens": 26,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 0,
+        "agent_accuracy": 0
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          4
+        ],
+        [
+          4,
+          30
+        ],
+        [
+          30,
+          48
+        ]
+      ]
+    },
+    "data/gold/trace_elephant/trajectories.jsonl:79": {
+      "source": "data/gold/trace_elephant/trajectories.jsonl",
+      "index": 79,
+      "context_length": 202752,
+      "prediction": {
+        "pred_step_index": 9,
+        "latency": 15.536439900000005,
+        "input_tokens": 49308,
+        "output_tokens": 16,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 1,
+        "agent_accuracy": 1
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          15
+        ]
+      ]
+    },
+    "data/gold/trace_elephant/trajectories.jsonl:80": {
+      "source": "data/gold/trace_elephant/trajectories.jsonl",
+      "index": 80,
+      "context_length": 202752,
+      "prediction": {
+        "pred_step_index": -1,
+        "latency": 3.152771200000643,
+        "input_tokens": 16222,
+        "output_tokens": 16,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 0,
+        "agent_accuracy": 0
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          7
+        ]
+      ]
+    },
+    "data/gold/trace_elephant/trajectories.jsonl:81": {
+      "source": "data/gold/trace_elephant/trajectories.jsonl",
+      "index": 81,
+      "context_length": 202752,
+      "prediction": {
+        "pred_step_index": -1,
+        "latency": 6.439636199999768,
+        "input_tokens": 30613,
+        "output_tokens": 16,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 0,
+        "agent_accuracy": 0
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          10
+        ]
+      ]
+    },
+    "data/gold/trace_elephant/trajectories.jsonl:82": {
+      "source": "data/gold/trace_elephant/trajectories.jsonl",
+      "index": 82,
+      "context_length": 202752,
+      "prediction": {
+        "pred_step_index": 26,
+        "latency": 168.08777720000035,
+        "input_tokens": 191560,
+        "output_tokens": 29,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 0,
+        "agent_accuracy": 0
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          3
+        ],
+        [
+          3,
+          29
+        ]
+      ]
+    },
+    "data/gold/trace_elephant/trajectories.jsonl:83": {
+      "source": "data/gold/trace_elephant/trajectories.jsonl",
+      "index": 83,
+      "context_length": 202752,
+      "prediction": {
+        "pred_step_index": 5,
+        "latency": 4.005386599999838,
+        "input_tokens": 22798,
+        "output_tokens": 13,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 1,
+        "agent_accuracy": 1
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          7
+        ]
+      ]
+    },
+    "data/gold/trace_elephant/trajectories.jsonl:84": {
+      "source": "data/gold/trace_elephant/trajectories.jsonl",
+      "index": 84,
+      "context_length": 202752,
+      "prediction": {
+        "pred_step_index": 3,
+        "latency": 2.013503700000001,
+        "input_tokens": 12776,
+        "output_tokens": 13,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 1,
+        "agent_accuracy": 1
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          5
+        ]
+      ]
+    },
+    "data/gold/trace_elephant/trajectories.jsonl:85": {
+      "source": "data/gold/trace_elephant/trajectories.jsonl",
+      "index": 85,
+      "context_length": 202752,
+      "status": "token_limit_exceeded",
+      "prediction": null,
+      "metrics": {
+        "step_accuracy": 0,
+        "agent_accuracy": 0
+      },
+      "error": {
+        "type": "ResponseError",
+        "message": "the prompt is longer than the context length currently available to the model; shorten the prompt, adjust the context length in settings, or use a model with a longer context length (status code: 400)"
+      },
+      "slice_ranges": [
+        [
+          0,
+          47
+        ]
+      ]
+    },
+    "data/gold/trace_elephant/trajectories.jsonl:86": {
+      "source": "data/gold/trace_elephant/trajectories.jsonl",
+      "index": 86,
+      "context_length": 202752,
+      "prediction": {
+        "pred_step_index": 4,
+        "latency": 1.2895085999998628,
+        "input_tokens": 8872,
+        "output_tokens": 16,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 0,
+        "agent_accuracy": 1
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          4
+        ],
+        [
+          4,
+          20
+        ]
+      ]
+    },
+    "data/gold/trace_elephant/trajectories.jsonl:87": {
+      "source": "data/gold/trace_elephant/trajectories.jsonl",
+      "index": 87,
+      "context_length": 202752,
+      "status": "token_limit_exceeded",
+      "prediction": null,
+      "metrics": {
+        "step_accuracy": 0,
+        "agent_accuracy": 0
+      },
+      "error": {
+        "type": "ResponseError",
+        "message": "the prompt is longer than the context length currently available to the model; shorten the prompt, adjust the context length in settings, or use a model with a longer context length (status code: 400)"
+      },
+      "slice_ranges": [
+        [
+          0,
+          47
+        ]
+      ]
+    },
+    "data/gold/trace_elephant/trajectories.jsonl:88": {
+      "source": "data/gold/trace_elephant/trajectories.jsonl",
+      "index": 88,
+      "context_length": 202752,
+      "status": "token_limit_exceeded",
+      "prediction": null,
+      "metrics": {
+        "step_accuracy": 0,
+        "agent_accuracy": 0
+      },
+      "error": {
+        "type": "ResponseError",
+        "message": "the prompt is longer than the context length currently available to the model; shorten the prompt, adjust the context length in settings, or use a model with a longer context length (status code: 400)"
+      },
+      "slice_ranges": [
+        [
+          0,
+          47
+        ]
+      ]
+    },
+    "data/gold/trace_elephant/trajectories.jsonl:89": {
+      "source": "data/gold/trace_elephant/trajectories.jsonl",
+      "index": 89,
+      "context_length": 202752,
+      "prediction": {
+        "pred_step_index": 9,
+        "latency": 91.84234489999926,
+        "input_tokens": 162237,
+        "output_tokens": 29,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 0,
+        "agent_accuracy": 1
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          8
+        ],
+        [
+          8,
+          22
+        ]
+      ]
+    },
+    "data/gold/trace_elephant/trajectories.jsonl:90": {
+      "source": "data/gold/trace_elephant/trajectories.jsonl",
+      "index": 90,
+      "context_length": 202752,
+      "prediction": {
+        "pred_step_index": 7,
+        "latency": 65.41935459999968,
+        "input_tokens": 130207,
+        "output_tokens": 29,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 0,
+        "agent_accuracy": 0
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          6
+        ],
+        [
+          6,
+          23
+        ]
+      ]
+    },
+    "data/gold/trace_elephant/trajectories.jsonl:91": {
+      "source": "data/gold/trace_elephant/trajectories.jsonl",
+      "index": 91,
+      "context_length": 202752,
+      "status": "token_limit_exceeded",
+      "prediction": null,
+      "metrics": {
+        "step_accuracy": 0,
+        "agent_accuracy": 0
+      },
+      "error": {
+        "type": "ResponseError",
+        "message": "the prompt is longer than the context length currently available to the model; shorten the prompt, adjust the context length in settings, or use a model with a longer context length (status code: 400)"
+      },
+      "slice_ranges": [
+        [
+          0,
+          46
+        ]
+      ]
+    },
+    "data/gold/trace_elephant/trajectories.jsonl:92": {
+      "source": "data/gold/trace_elephant/trajectories.jsonl",
+      "index": 92,
+      "context_length": 202752,
+      "status": "token_limit_exceeded",
+      "prediction": null,
+      "metrics": {
+        "step_accuracy": 0,
+        "agent_accuracy": 0
+      },
+      "error": {
+        "type": "ResponseError",
+        "message": "the prompt is longer than the context length currently available to the model; shorten the prompt, adjust the context length in settings, or use a model with a longer context length (status code: 400)"
+      },
+      "slice_ranges": [
+        [
+          0,
+          48
+        ]
+      ]
+    },
+    "data/gold/trace_elephant/trajectories.jsonl:94": {
+      "source": "data/gold/trace_elephant/trajectories.jsonl",
+      "index": 94,
+      "context_length": 202752,
+      "prediction": {
+        "pred_step_index": 4,
+        "latency": 2.923189799999818,
+        "input_tokens": 8668,
+        "output_tokens": 16,
+        "cached_tokens": 0
+      },
+      "metrics": {
+        "step_accuracy": 0,
+        "agent_accuracy": 1
+      },
+      "status": "complete",
+      "slice_ranges": [
+        [
+          0,
+          4
+        ],
+        [
+          4,
+          41
+        ]
+      ]
+    },
+    "data/gold/trace_elephant/trajectories.jsonl:95": {
+      "source": "data/gold/trace_elephant/trajectories.jsonl",
+      "index": 95,
+      "context_length": 202752,
+      "status": "token_limit_exceeded",
+      "prediction": null,
+      "metrics": {
+        "step_accuracy": 0,
+        "agent_accuracy": 0
+      },
+      "error": {
+        "type": "ResponseError",
+        "message": "the prompt is longer than the context length currently available to the model; shorten the prompt, adjust the context length in settings, or use a model with a longer context length (status code: 400)"
+      },
+      "slice_ranges": [
+        [
+          0,
+          10
+        ],
+        [
+          10,
+          38
+        ]
+      ]
+    }
+  }
+}

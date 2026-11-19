@@ -1,0 +1,195 @@
+{
+  "version": 1,
+  "configs": {
+    "no_slicing__all_at_once": {
+      "file": "no_slicing__all_at_once.json",
+      "slicing": "no_slicing",
+      "slicing_parameters": {},
+      "attribution": "all_at_once",
+      "model": "glm-4.7-flash:q8_0",
+      "context_length": 202752
+    },
+    "fixed_step_5_overlap2__all_at_once": {
+      "file": "fixed_step_5_overlap2__all_at_once.json",
+      "slicing": "fixed_step_5_overlap2",
+      "slicing_parameters": {
+        "max_steps_per_slice": 5,
+        "overlapping": 2
+      },
+      "attribution": "all_at_once",
+      "model": "glm-4.7-flash:q8_0",
+      "context_length": 202752
+    },
+    "fixed_step_9_overlap4__all_at_once": {
+      "file": "fixed_step_9_overlap4__all_at_once.json",
+      "slicing": "fixed_step_9_overlap4",
+      "slicing_parameters": {
+        "max_steps_per_slice": 9,
+        "overlapping": 4
+      },
+      "attribution": "all_at_once",
+      "model": "glm-4.7-flash:q8_0",
+      "context_length": 202752
+    },
+    "fixed_step_9__all_at_once": {
+      "file": "fixed_step_9__all_at_once.json",
+      "slicing": "fixed_step_9",
+      "slicing_parameters": {
+        "max_steps_per_slice": 9
+      },
+      "attribution": "all_at_once",
+      "model": "glm-4.7-flash:q8_0",
+      "context_length": 202752
+    },
+    "fixed_token_15000_overlap7500__all_at_once": {
+      "file": "fixed_token_15000_overlap7500__all_at_once.json",
+      "slicing": "fixed_token_15000_overlap7500",
+      "slicing_parameters": {
+        "max_tokens_per_slice": 15000,
+        "overlapping": 7500
+      },
+      "attribution": "all_at_once",
+      "model": "glm-4.7-flash:q8_0",
+      "context_length": 202752
+    },
+    "fixed_token_15000__all_at_once": {
+      "file": "fixed_token_15000__all_at_once.json",
+      "slicing": "fixed_token_15000",
+      "slicing_parameters": {
+        "max_tokens_per_slice": 15000
+      },
+      "attribution": "all_at_once",
+      "model": "glm-4.7-flash:q8_0",
+      "context_length": 202752
+    },
+    "c99_bow_rank5_min3_extra_context1__all_at_once": {
+      "file": "c99_bow_rank5_min3_extra_context1__all_at_once.json",
+      "slicing": "c99_bow_rank5_min3_extra_context1",
+      "slicing_parameters": {
+        "tokenizer": "bow",
+        "rank_window": 5,
+        "min_slice_steps": 3,
+        "extra_context": 1
+      },
+      "attribution": "all_at_once",
+      "model": "glm-4.7-flash:q8_0",
+      "context_length": 202752
+    },
+    "llm_based__all_at_once": {
+      "file": "llm_based__all_at_once.json",
+      "slicing": "llm_based",
+      "slicing_parameters": {
+        "model_name": "glm-4.7-flash:q8_0"
+      },
+      "attribution": "all_at_once",
+      "model": "glm-4.7-flash:q8_0",
+      "context_length": 202752
+    },
+    "fixed_step_5__all_at_once": {
+      "file": "fixed_step_5__all_at_once.json",
+      "slicing": "fixed_step_5",
+      "slicing_parameters": {
+        "max_steps_per_slice": 5
+      },
+      "attribution": "all_at_once",
+      "model": "glm-4.7-flash:q8_0",
+      "context_length": 202752
+    },
+    "fixed_step_7__all_at_once": {
+      "file": "fixed_step_7__all_at_once.json",
+      "slicing": "fixed_step_7",
+      "slicing_parameters": {
+        "max_steps_per_slice": 7
+      },
+      "attribution": "all_at_once",
+      "model": "glm-4.7-flash:q8_0",
+      "context_length": 202752
+    },
+    "fixed_step_11__all_at_once": {
+      "file": "fixed_step_11__all_at_once.json",
+      "slicing": "fixed_step_11",
+      "slicing_parameters": {
+        "max_steps_per_slice": 11
+      },
+      "attribution": "all_at_once",
+      "model": "glm-4.7-flash:q8_0",
+      "context_length": 202752
+    },
+    "fixed_step_13__all_at_once": {
+      "file": "fixed_step_13__all_at_once.json",
+      "slicing": "fixed_step_13",
+      "slicing_parameters": {
+        "max_steps_per_slice": 13
+      },
+      "attribution": "all_at_once",
+      "model": "glm-4.7-flash:q8_0",
+      "context_length": 202752
+    },
+    "fixed_step_7_overlap3__all_at_once": {
+      "file": "fixed_step_7_overlap3__all_at_once.json",
+      "slicing": "fixed_step_7_overlap3",
+      "slicing_parameters": {
+        "max_steps_per_slice": 7,
+        "overlapping": 3
+      },
+      "attribution": "all_at_once",
+      "model": "glm-4.7-flash:q8_0",
+      "context_length": 202752
+    },
+    "fixed_step_11_overlap5__all_at_once": {
+      "file": "fixed_step_11_overlap5__all_at_once.json",
+      "slicing": "fixed_step_11_overlap5",
+      "slicing_parameters": {
+        "max_steps_per_slice": 11,
+        "overlapping": 5
+      },
+      "attribution": "all_at_once",
+      "model": "glm-4.7-flash:q8_0",
+      "context_length": 202752
+    },
+    "fixed_step_13_overlap6__all_at_once": {
+      "file": "fixed_step_13_overlap6__all_at_once.json",
+      "slicing": "fixed_step_13_overlap6",
+      "slicing_parameters": {
+        "max_steps_per_slice": 13,
+        "overlapping": 6
+      },
+      "attribution": "all_at_once",
+      "model": "glm-4.7-flash:q8_0",
+      "context_length": 202752
+    },
+    "fixed_token_8000__all_at_once": {
+      "file": "fixed_token_8000__all_at_once.json",
+      "slicing": "fixed_token_8000",
+      "slicing_parameters": {
+        "max_tokens_per_slice": 8000
+      },
+      "attribution": "all_at_once",
+      "model": "glm-4.7-flash:q8_0",
+      "context_length": 202752
+    },
+    "fixed_token_8000_overlap4000__all_at_once": {
+      "file": "fixed_token_8000_overlap4000__all_at_once.json",
+      "slicing": "fixed_token_8000_overlap4000",
+      "slicing_parameters": {
+        "max_tokens_per_slice": 8000,
+        "overlapping": 4000
+      },
+      "attribution": "all_at_once",
+      "model": "glm-4.7-flash:q8_0",
+      "context_length": 202752
+    },
+    "c99_bow_rank5_min3__all_at_once": {
+      "file": "c99_bow_rank5_min3__all_at_once.json",
+      "slicing": "c99_bow_rank5_min3",
+      "slicing_parameters": {
+        "tokenizer": "bow",
+        "rank_window": 5,
+        "min_slice_steps": 3
+      },
+      "attribution": "all_at_once",
+      "model": "glm-4.7-flash:q8_0",
+      "context_length": 202752
+    }
+  }
+}
