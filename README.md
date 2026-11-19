@@ -1,97 +1,92 @@
-# Local Ollama experiment runner
+# Chạy thí nghiệm trajectory slicing với Ollama local
 
-Hướng dẫn triển khai bằng tiếng Việt: [DEPLOY.md](DEPLOY.md).
+Đây là bản rút gọn của `trajectory-slicing-code` để chạy Qwen, DeepSeek và GLM
+trên máy GPU. Cấu trúc module trong `src/`, dữ liệu `data/gold/`, cấu hình thí
+nghiệm và định dạng kết quả tương thích với project gốc. Một runner duy nhất
+nhận tên model và URL Ollama qua tham số.
 
-This is a reduced copy of the trajectory slicing experiment for a GPU machine.
-The `src/` module layout, gold dataset paths, experiment configurations, and
-prediction output format match `trajectory-slicing-code`. One runner handles
-Qwen, DeepSeek, GLM, or another installed Ollama model.
+Xem [DEPLOY.md](DEPLOY.md) để biết cách dùng Git, Git LFS, clone lên máy GPU và
+đẩy kết quả về GitHub.
 
-## Docker job on the GPU machine
+## Chuẩn bị trên máy GPU Linux
 
-Install Docker and Git LFS on the Linux GPU machine. From this directory, after
-cloning and downloading the LFS dataset, run these commands on the GPU host
-itself so Docker bind mounts its local `outputs/` directory:
+Cài Docker và Git LFS. Nếu chạy Ollama trong Docker với GPU NVIDIA, cần cài
+NVIDIA Container Toolkit và cấu hình Docker runtime. Chạy các lệnh sau ngay
+trên máy GPU để bind mount trỏ đến thư mục `outputs/` của máy đó:
 
 ```bash
 git lfs pull
 docker build -t trajectory-slicing-llm-local .
-bash run-docker.sh --model qwen3:32b --url http://localhost:11434 --dry-run
+bash run-with-gpu.sh --model qwen3:32b --dry-run
 ```
 
-The dry run reads all inputs and existing checkpoints, prints how many runs are
-pending for each configuration, and does not contact Ollama or write results.
-The runner refuses to start if `index.json` or a result file listed in it is
-missing. This catches a wrong or empty output mount before any inference. Use
-`--allow-fresh` only when intentionally starting a model with no prior results.
+Dry run đọc dữ liệu và checkpoint hiện có, in số lượt còn phải chạy cho từng
+cấu hình, không gọi model và không ghi file. Runner sẽ báo lỗi nếu thiếu
+`index.json` hoặc một file kết quả được liệt kê trong index, nhờ đó không vô
+tình chạy lại từ đầu khi mount sai. Chỉ dùng `--allow-fresh` khi chủ ý tạo thí
+nghiệm mới không có checkpoint.
 
-### Ollama on the host
+## Cách 1: Ollama chạy trong Docker với GPU NVIDIA
 
-If Ollama already runs on the GPU host, pull the desired model there and run:
+Chạy từng model một:
+
+```bash
+bash run-with-gpu.sh --model qwen3:32b
+bash run-with-gpu.sh --model deepseek-r1:32b
+bash run-with-gpu.sh --model glm-4.7-flash:q8_0
+```
+
+Script kiểm tra `--gpus all` bằng `nvidia-smi`, khởi động image Ollama chính
+thức, tải model vào Docker volume lưu lâu dài, rồi kiểm tra model có dùng VRAM
+ở context đã chọn trước khi chạy thí nghiệm. Nếu model chỉ chạy trên CPU,
+script dừng và báo lỗi. Nếu model dùng cả RAM lẫn VRAM, script in mức sử dụng
+và tiếp tục chạy. Khi job kết thúc, container Ollama
+được dừng nhưng model đã tải và kết quả vẫn còn.
+
+## Cách 2: Ollama chạy trên máy host
+
+Nếu Ollama đã chạy trực tiếp trên máy GPU, tải model và dùng runner container:
 
 ```bash
 ollama pull qwen3:32b
 bash run-docker.sh --model qwen3:32b --url http://localhost:11434
 ```
 
-Start `ollama serve` as a host service first if it is not already running. This
-mode uses Docker host networking; the Python container itself does not need a
-GPU device because the host Ollama process performs inference.
+Nếu Ollama chưa chạy, khởi động `ollama serve` trong terminal khác hoặc bằng
+system service. `run-docker.sh` dùng Docker host networking để truy cập
+`localhost:11434`. Container Python không cần gắn GPU vì Ollama trên host thực
+hiện inference.
 
-### Ollama in Docker with NVIDIA GPU
+## Kết quả và tiếp tục khi bị ngắt
 
-If you want Ollama itself in Docker, install the NVIDIA Container Toolkit and
-configure the Docker runtime for it. Then run:
+Hai script đều bind mount thư mục `outputs/` của project vào `/app/outputs`
+trong container. Kết quả được lưu sau mỗi sample tại:
 
-```bash
-bash run-with-gpu.sh --model qwen3:32b
+```text
+outputs/experiments/e001_latency_accuracy_tradeoff/<model>/predictions/
 ```
 
-This script checks GPU pass-through with `docker run --gpus all ubuntu nvidia-smi`,
-starts the official `ollama/ollama` image with `--gpus all`, pulls the requested
-model into a persistent Docker volume, then loads one token at the requested
-context length and checks Ollama's reported VRAM usage. A CPU-only load fails
-before the experiment starts; partial GPU loading is reported. The script stops
-Ollama when the job exits. It checks the output mount before pulling a model. The Python job
-shares Ollama's container network. The same script
-accepts `deepseek-r1:32b` and `glm-4.7-flash:q8_0` as `--model` values; run them
-one at a time. The model volume remains after the containers stop.
+Project đã có checkpoint của cả ba model. Chạy lại cùng lệnh để tiếp tục:
+sample `complete` được bỏ qua, sample `failed` được thử lại. Sample
+`token_limit_exceeded` chỉ được thử lại khi tăng `--context-length`. Nếu Ollama
+mất kết nối giữa chừng, job dừng và giữ checkpoint hiện có. Mỗi model có khóa
+để tránh hai runner cùng ghi một bộ kết quả. Container tự thoát khi quét xong;
+nếu vẫn còn sample `failed`, lệnh trả mã lỗi khác 0.
 
-Both scripts bind mount this directory's `outputs/` to `/app/outputs`, preserving
-the existing checkpoints and writing new results straight to the host. The job
-process exits after all configurations are attempted, and `--rm` removes the
-job container. If any sample has status `failed`, the job exits with a nonzero
-code; rerun the same command to retry it. If Ollama stops serving mid-run, the
-job stops without replacing the current sample's checkpoint. Token limit
-outcomes remain saved with status `token_limit_exceeded` until you increase
-`--context-length`.
+Tham số `--context-length N` ghi đè mặc định: Qwen `32768`, DeepSeek `131072`,
+GLM `202752`; model khác dùng `32768`. Context lớn cần thêm VRAM. Tên model
+phải khớp chính xác với model có trong Ollama.
 
-To run without Docker, install Python 3.12+ and `uv`, then create `.venv`,
-install `requirements.txt`, download NLTK stopwords, and call `src/run_local.py`
-with the same `--model` and `--url` arguments.
+## Dữ liệu và Git LFS
 
-Use `--context-length N` to override the existing defaults: 32768 for Qwen,
-131072 for DeepSeek, and 202752 for GLM. Other model tags default to 32768.
-The exact model tag must be present in the Ollama `/api/tags` response.
+Các file trong `data/gold/` là toàn bộ dữ liệu đầu vào cần thiết. File Trace
+Elephant 231 MB được quản lý bằng Git LFS; các JSONL và checkpoint nhỏ dùng Git
+thường. Sau khi clone, chạy `git lfs pull` trước khi build image. Docker build
+sẽ từ chối nếu file lớn vẫn chỉ là LFS pointer.
 
-Results are checkpointed after each sample in
-`outputs/experiments/e001_latency_accuracy_tradeoff/<model>/predictions/`.
-Rerunning the same command resumes unfinished or failed samples. The runner
-executes one sample at a time to avoid competing GPU requests, and a per-model
-lock prevents two runner processes from writing to the same checkpoint files.
-Existing Qwen, DeepSeek, and GLM prediction checkpoints are included in this
-directory and can be committed with ordinary Git. Their JSON files are kept
-unchanged so the runner can resume them directly.
+Không cần `.env` hay thông tin xác thực Cloud Run để chạy Ollama local. Các cấu
+hình slicing dùng OpenAI embeddings bị bỏ qua, giống các runner model hiện có.
 
-The bundled `data/gold/` files are the only input datasets required. No Cloud
-Run credentials are used. Transformer based slicing configurations remain
-excluded, as in the existing model runners, because they use OpenAI embeddings.
-
-## Git checkout
-
-The 231 MB Trace Elephant JSONL file is tracked through Git LFS; the other
-gold JSONL files use ordinary Git. Install Git LFS on the remote machine before
-cloning, then run `git lfs install`. After a clone, run `git lfs pull` from the
-repository root if the large file was not downloaded automatically. Check that
-`data/gold/trace_elephant/trajectories.jsonl` contains JSONL data rather than
-an LFS pointer before starting an experiment.
+Nếu không dùng Docker, cài Python 3.12+, `uv` và các gói trong
+`requirements.txt`, tải NLTK stopwords, rồi gọi `src/run_local.py` với cùng
+tham số `--model` và `--url`.

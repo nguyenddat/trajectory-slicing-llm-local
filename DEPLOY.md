@@ -4,8 +4,9 @@ Thực hiện các lệnh Git trong thư mục `trajectory-slicing-llm-local`, k
 thư mục `Trajector-Slicing` ở cấp trên. Thư mục này đã được `git init` với nhánh
 `main` và đã cấu hình remote
 `https://github.com/nguyenddat/trajectory-slicing-llm-local.git`.
+Nhánh `main` đã được đẩy lên GitHub; chỉ tạo commit mới khi có thay đổi.
 
-## 1. Đưa project lên Git
+## 1. Cập nhật dự án trên Git
 
 Máy phát triển cần cài Git LFS. File
 `data/gold/trace_elephant/trajectories.jsonl` (231 MB) đã được khai báo trong
@@ -17,17 +18,23 @@ git lfs install --local
 git add .
 git lfs ls-files
 git status --short
-git commit -m "Prepare local Ollama experiment runner"
-git push -u origin main
+git commit -m "Cập nhật hướng dẫn và mã chạy Ollama"
+git push
 ```
 
 Khi `git lfs ls-files` chạy sau `git add`, nó phải liệt kê file
-Trace Elephant. `.venv/`, `.env`, cache Python và `.runner.lock` được bỏ qua.
+Trace Elephant. Chỉ chạy `git commit` khi `git status` có thay đổi. `.venv/`,
+`.env`, cache Python và `.runner.lock` được bỏ qua.
 
-Nếu cần tạo lại repo Git từ một bản copy chưa có `.git`, chạy `git init -b main`
-và `git remote add origin
-https://github.com/nguyenddat/trajectory-slicing-llm-local.git` trong đúng thư
-mục project trước các lệnh trên. Không chạy lại `git init` trên bản hiện tại.
+Nếu cần tạo lại repo Git từ một bản copy chưa có `.git`, chạy trong đúng thư
+mục dự án:
+
+```bash
+git init -b main
+git remote add origin https://github.com/nguyenddat/trajectory-slicing-llm-local.git
+```
+
+Không chạy lại `git init` trên bản hiện tại.
 
 ## 2. Clone trên máy GPU Linux
 
@@ -98,7 +105,7 @@ khi tăng `--context-length`. Mỗi sample được ghi checkpoint ngay sau khi 
 ```bash
 git status --short outputs/
 git add outputs/
-git commit -m "Update local LLM experiment checkpoints"
+git commit -m "Cập nhật kết quả thí nghiệm LLM local"
 git push
 ```
 
