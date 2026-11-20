@@ -9,7 +9,6 @@ import time
 from pathlib import Path
 
 import httpx
-from tqdm import tqdm
 
 SRC_DIR = Path(__file__).resolve().parent
 if str(SRC_DIR) not in sys.path:
@@ -273,6 +272,7 @@ def main() -> None:
             continue
         if not pending:
             failed_samples += sum(sample.get("status") == "failed" for sample in result["samples"].values())
+            print(f"{config_id}: {len(samples)}/{len(samples)} done, 0 pending", flush=True)
             continue
 
         config_entry["context_length"] = context_length
@@ -286,8 +286,11 @@ def main() -> None:
             model_name=model_name,
             slicing_method=slicing_class(**slicing_params) if slicing_class else None,
         )
-        progress = tqdm(pending, desc=config_id, unit="sample", total=len(samples), initial=len(samples) - len(pending))
-        for source_name, index, trajectory, sample_key in progress:
+        already_done = len(samples) - len(pending)
+        print(f"{config_id}: {already_done}/{len(samples)} done, {len(pending)} pending", flush=True)
+        for position, (source_name, index, trajectory, sample_key) in enumerate(pending, start=already_done + 1):
+            print(f"{config_id}: starting {position}/{len(samples)} {sample_key}", flush=True)
+            started_at = time.monotonic()
             sample = {"source": source_name, "index": index, "context_length": context_length}
             try:
                 cached_ranges = base_run._cached_slice_ranges_for_sample(slice_range_cache, sample_key)
@@ -311,6 +314,12 @@ def main() -> None:
             result["samples"][sample_key] = sample
             base_run._write_json_atomic(result_path, result)
             base_run._write_json_atomic(index_path, manifest)
+            elapsed = time.monotonic() - started_at
+            print(
+                f"{config_id}: {position}/{len(samples)} {sample['status']} "
+                f"{sample_key} ({elapsed:.1f}s)",
+                flush=True,
+            )
         failed_samples += sum(sample.get("status") == "failed" for sample in result["samples"].values())
         print(f"Saved {len(pending)} samples to {result_path}")
 

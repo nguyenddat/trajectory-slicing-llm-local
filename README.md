@@ -2,17 +2,32 @@
 
 Đây là bản rút gọn của `trajectory-slicing-code` để chạy Qwen, DeepSeek và GLM
 trên máy GPU. Cấu trúc module trong `src/`, dữ liệu `data/gold/`, cấu hình thí
-nghiệm và định dạng kết quả tương thích với project gốc. Một runner duy nhất
-nhận tên model và URL Ollama qua tham số.
+nghiệm và định dạng kết quả tương thích với project gốc. Chạy từng model bằng
+`run-with-gpu.sh`; script tự khởi động Ollama trong Docker.
 
 Xem [DEPLOY.md](DEPLOY.md) để biết cách dùng Git, Git LFS, clone lên máy GPU và
 đẩy kết quả về GitHub.
 
 ## Chuẩn bị trên máy GPU Linux
 
-Cài Docker và Git LFS. Nếu chạy Ollama trong Docker với GPU NVIDIA, cần cài
-NVIDIA Container Toolkit và cấu hình Docker runtime. Chạy các lệnh sau ngay
-trên máy GPU để bind mount trỏ đến thư mục `outputs/` của máy đó:
+Cài Docker, Git LFS và NVIDIA driver trên máy GPU. Với Ubuntu/Debian, cài
+[NVIDIA Container Toolkit](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/install-guide.html)
+trên **host** rồi cấu hình Docker:
+
+```bash
+sudo apt-get update
+sudo apt-get install -y --no-install-recommends ca-certificates curl gnupg2
+curl -fsSL https://nvidia.github.io/libnvidia-container/gpgkey | sudo gpg --dearmor -o /usr/share/keyrings/nvidia-container-toolkit-keyring.gpg
+curl -s -L https://nvidia.github.io/libnvidia-container/stable/deb/nvidia-container-toolkit.list | sed 's#deb https://#deb [signed-by=/usr/share/keyrings/nvidia-container-toolkit-keyring.gpg] https://#g' | sudo tee /etc/apt/sources.list.d/nvidia-container-toolkit.list
+sudo apt-get update
+sudo apt-get install -y nvidia-container-toolkit
+sudo nvidia-ctk runtime configure --runtime=docker
+sudo systemctl restart docker
+docker run --rm --gpus all ubuntu nvidia-smi
+```
+
+Với distro khác, xem hướng dẫn NVIDIA ở link trên. Sau đó chạy trong thư mục
+project trên máy GPU để bind mount trỏ đến `outputs/` của máy đó:
 
 ```bash
 git lfs pull
@@ -26,7 +41,7 @@ cấu hình, không gọi model và không ghi file. Runner sẽ báo lỗi nế
 tình chạy lại từ đầu khi mount sai. Chỉ dùng `--allow-fresh` khi chủ ý tạo thí
 nghiệm mới không có checkpoint.
 
-## Cách 1: Ollama chạy trong Docker với GPU NVIDIA
+## Chạy Ollama trong Docker với GPU NVIDIA
 
 Chạy từng model một:
 
@@ -43,23 +58,13 @@ script dừng và báo lỗi. Nếu model dùng cả RAM lẫn VRAM, script in m
 và tiếp tục chạy. Khi job kết thúc, container Ollama
 được dừng nhưng model đã tải và kết quả vẫn còn.
 
-## Cách 2: Ollama chạy trên máy host
-
-Nếu Ollama đã chạy trực tiếp trên máy GPU, tải model và dùng runner container:
-
-```bash
-ollama pull qwen3:32b
-bash run-docker.sh --model qwen3:32b --url http://localhost:11434
-```
-
-Nếu Ollama chưa chạy, khởi động `ollama serve` trong terminal khác hoặc bằng
-system service. `run-docker.sh` dùng Docker host networking để truy cập
-`localhost:11434`. Container Python không cần gắn GPU vì Ollama trên host thực
-hiện inference.
-
 ## Kết quả và tiếp tục khi bị ngắt
 
-Hai script đều bind mount thư mục `outputs/` của project vào `/app/outputs`
+Chạy job bằng `bash run-with-gpu.sh --model qwen3:32b`. Log in tiến độ sau
+từng sample. Nhấn `Ctrl+C` để dừng; container tự thoát khi job xong. Chạy lại
+cùng lệnh để tiếp tục từ checkpoint.
+
+Script bind mount thư mục `outputs/` của project vào `/app/outputs`
 trong container. Kết quả được lưu sau mỗi sample tại:
 
 ```text
@@ -88,7 +93,3 @@ Không cần `.env` hay thông tin xác thực Cloud Run để chạy Ollama loc
 hình `c99_transformer` và `text_tiling_transformer` cần OpenRouter embeddings
 đã bị loại khỏi danh sách chạy của runner local. Checkpoint transformer cũ của
 Qwen vẫn được giữ trong `outputs/`, nhưng runner sẽ không chạy thêm cấu hình đó.
-
-Nếu không dùng Docker, cài Python 3.12+, `uv` và các gói trong
-`requirements.txt`, tải NLTK stopwords, rồi gọi `src/run_local.py` với cùng
-tham số `--model` và `--url`.

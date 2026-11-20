@@ -38,8 +38,8 @@ Không chạy lại `git init` trên bản hiện tại.
 
 ## 2. Clone trên máy GPU Linux
 
-Cài Git LFS và Docker trên máy GPU. Để chạy Ollama trong Docker với GPU NVIDIA,
-cài thêm NVIDIA Container Toolkit và cấu hình Docker runtime. Sau đó:
+Cài Git LFS, Docker, NVIDIA driver và NVIDIA Container Toolkit trên máy GPU;
+xem lệnh cài và cấu hình Docker trong [README.md](README.md). Sau đó:
 
 ```bash
 git lfs install
@@ -79,16 +79,6 @@ Script kiểm tra GPU, khởi động Ollama trong container, tự pull model v�
 volume `trajectory-slicing-ollama-models`, rồi chạy job. Kết quả được bind mount
 vào thư mục `outputs/` của project trên máy host. Khi job kết thúc hoặc lỗi,
 container Ollama được dừng; model trong volume và checkpoint trên host vẫn còn.
-
-Nếu Ollama đã chạy trực tiếp trên host GPU, dùng cách này thay thế:
-
-```bash
-ollama pull qwen3:32b
-bash run-docker.sh --model qwen3:32b --url http://localhost:11434
-```
-
-`run-docker.sh` kết nối đến Ollama trên host qua Docker host networking. Không
-cần truyền GPU vào container Python vì Ollama trên host thực hiện inference.
 
 Thêm `--context-length N` nếu cần đổi context. Mặc định: Qwen 32768,
 DeepSeek 131072, GLM 202752. Context lớn cần thêm VRAM; chế độ GPU kiểm tra
