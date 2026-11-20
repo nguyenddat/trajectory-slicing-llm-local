@@ -64,6 +64,13 @@ Chạy job bằng `bash run-with-gpu.sh --model qwen3:32b`. Log in tiến độ 
 từng sample. Nhấn `Ctrl+C` để dừng; container tự thoát khi job xong. Chạy lại
 cùng lệnh để tiếp tục từ checkpoint.
 
+Xem tiến độ ngay trong terminal chạy job, hoặc từ terminal khác khi job đang chạy:
+
+```bash
+docker ps --filter ancestor=trajectory-slicing-llm-local
+docker logs -f <container_id>
+```
+
 Script bind mount thư mục `outputs/` của project vào `/app/outputs`
 trong container. Kết quả được lưu sau mỗi sample tại:
 
